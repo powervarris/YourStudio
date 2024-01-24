@@ -1,0 +1,55 @@
+﻿body {
+}
+
+
+.menu {
+    height: 100%;
+    width: 80px;
+    margin-top: -2px;
+    margin-left: -190px
+}
+
+
+.nav-item {
+    
+    margin-left:10px;
+}
+
+.logonav {
+    height: 100%;
+    width: 80px;
+    margin-top: -50px;
+    margin-left: -90px;
+}
+
+.logonav2 {
+    height: 100%;
+    width: 200px;
+    margin-top: -62px;
+    margin-left: -30px;
+    margin-right: 500px
+}
+
+.topnav {
+    margin-top: 250px;
+}
+.fa-bars{
+    margin-top:-15px;
+}
+
+.gall {
+    font-family: 'Palatino Linotype';
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 50px;
+    padding-right: 30px;
+}
+
+.form-inline input .form-control{
+    width: 200px;
+}
+
+.navbaradjust {
+    margin-bottom: 200px;
+}
