@@ -1,0 +1,78 @@
+﻿@model InquiryModel
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/wwwroot/css/site.css"/>
+</head>
+<body>
+    @using (Html.BeginForm("Submit", "Inquiry", FormMethod.Post))
+    {
+
+        <div class="form-box">
+            <div><strong>Send Inquiry</strong> |Inquiry List</div>
+            @Html.TextBoxFor(model => model.Name, new { placeholder = "Title", rows = 6, style = "width: 100%;" })
+            <br />
+            <br />
+
+            @Html.TextAreaFor(model => model.Message, new { placeholder = "Message", rows = 6, style = "width: 100%;" })
+            <br />
+            <br />
+
+            <div style="text-align: right;">
+                <input type="submit" value="Submit Inquiry" style="background-color: yellow;" />
+            </div>
+
+        </div>
+        <br />
+        <br />
+
+        <div class="FAQ">
+            <div>FREQUENTLY ASKED QUESTIONS</div>
+        </div>
+
+        <br />
+        <section class="faq1">
+            <div><strong>General |</strong> Photo Studio Experience</div>
+
+            <br />
+            <span class="additional-text">Click the button to toggle visibility.</span>
+            <span id="toggleText1" class="clickable-text" onclick="toggleMessage('toggleText1', 'hiddenMessage1')">V</span>
+
+            <div id="hiddenMessage1" class="hidden-message">
+                <br />
+                <p>This is the first hidden message. Click the text to toggle visibility.</p>
+            </div>
+
+            <hr />
+        </section>
+
+        <section class="faq2">
+            <div><strong>General |</strong> Photo Studio Experience</div>
+
+            <br />
+            <span class="additional-text">Click the button to toggle visibility.</span>
+            <span id="toggleText2" class="clickable-text" onclick="toggleMessage('toggleText2', 'hiddenMessage2')">V</span>
+
+            <div id="hiddenMessage2" class="hidden-message">
+                <br />
+                <p>This is the second hidden message. Click the text to toggle visibility.</p>
+            </div>
+
+            <hr />
+        </section>
+
+        <script>
+            function toggleMessage(toggleTextId, hiddenMessageId) {
+                var hiddenMessage = document.getElementById(hiddenMessageId);
+                var toggleText = document.getElementById(toggleTextId);
+                var currentDisplay = hiddenMessage.style.display;
+
+                hiddenMessage.style.display = (currentDisplay === 'none') ? 'block' : 'none';
+                toggleText.innerHTML = (currentDisplay === 'none') ? 'Λ' : 'V';
+            }
+        </script>
+
+    }
+</body>
+</html>
