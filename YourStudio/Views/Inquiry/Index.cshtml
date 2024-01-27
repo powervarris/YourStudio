@@ -5,7 +5,72 @@
 <head>
 <link rel="stylesheet" href="/wwwroot/css/site.css"/>
 </head>
+
 <body>
+    <header>
+
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                            data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- Left links -->
+                        <ul class="navbar-nav me-3">
+                            <li class="nav-item">
+                                <a class="nav-link active d-flex align-items-center" aria-current="page" href="#">
+                                    <i class="fas fa-bars pe-2 menu"></i>
+                                </a>
+                        </ul>
+                    </div>
+                    <span>
+                        <a href="#" class="topnav"></a>
+                        <img src="~/assets/logo.png" class="logonav" alt="">
+                        <img src="~/assets/logo2.png" class="logonav2" alt="">
+                    </span>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ml-auto navbar-right">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item active ">
+                            <a class="nav-link" href="#">Packages</a>
+                        </li>
+
+
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Booking
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Create Booking</a>
+                                <a class="dropdown-item" href="#">Booking List</a>
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+    </header>
     @using (Html.BeginForm("Submit", "Inquiry", FormMethod.Post))
     {
 
