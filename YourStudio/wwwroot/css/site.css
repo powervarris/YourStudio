@@ -56,6 +56,11 @@ body {
 }
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 3fbbd0c4cb73d88489e71b0736a9a3ec2a628fb0
 .menu {
     height: 100%;
     width: 80px;
@@ -69,20 +74,33 @@ body {
 }
 
 .navbar-nav {
+<<<<<<< HEAD
     margin-top: 20px;
+=======
+    margin-top: -20px;
+>>>>>>> 3fbbd0c4cb73d88489e71b0736a9a3ec2a628fb0
 }
 
 .logonav {
     height: 100%;
     width: 80px;
+<<<<<<< HEAD
     margin-top: -60px;
     margin-left: -20px;
+=======
+    margin-top: -50px;
+    margin-left: -90px;
+>>>>>>> 3fbbd0c4cb73d88489e71b0736a9a3ec2a628fb0
 }
 
 .logonav2 {
     height: 100%;
     width: 200px;
+<<<<<<< HEAD
     margin-top: -70px;
+=======
+    margin-top: -62px;
+>>>>>>> 3fbbd0c4cb73d88489e71b0736a9a3ec2a628fb0
     margin-left: -30px
 }
 
