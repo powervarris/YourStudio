@@ -55,17 +55,16 @@ body {
     font-family: 'Palatino Linotype';
 }
 
+.Inquiry {
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    font-family: 'Palatino Linotype';
+}
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 3fbbd0c4cb73d88489e71b0736a9a3ec2a628fb0
 .menu {
     height: 100%;
     width: 80px;
-    margin-top: -2px;
-    margin-left: -190px
 }
 
 .fa-li {
@@ -74,36 +73,26 @@ body {
 }
 
 .navbar-nav {
-<<<<<<< HEAD
-    margin-top: 20px;
-=======
-    margin-top: -20px;
->>>>>>> 3fbbd0c4cb73d88489e71b0736a9a3ec2a628fb0
+    float: right;
 }
 
 .logonav {
     height: 100%;
     width: 80px;
-<<<<<<< HEAD
-    margin-top: -60px;
-    margin-left: -20px;
-=======
-    margin-top: -50px;
-    margin-left: -90px;
->>>>>>> 3fbbd0c4cb73d88489e71b0736a9a3ec2a628fb0
+    margin-top: -5px;
 }
 
 .logonav2 {
     height: 100%;
     width: 200px;
-<<<<<<< HEAD
-    margin-top: -70px;
-=======
-    margin-top: -62px;
->>>>>>> 3fbbd0c4cb73d88489e71b0736a9a3ec2a628fb0
-    margin-left: -30px
+    margin-left: -30px;
+    margin-top: -15px;
 }
 
 .topnav {
-    margin-top: 200px;
+    margin-top: 100px;
+}
+
+.collapse.navbar-collapse {
+    justify-content: flex-end;
 }

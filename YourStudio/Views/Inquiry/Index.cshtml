@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-﻿
-=======
-﻿@model InquiryModel
+@model InquiryModel
 
 <!DOCTYPE html>
 <html>
@@ -74,23 +71,13 @@
 
 
     </header>
+   
+
     @using (Html.BeginForm("Submit", "Inquiry", FormMethod.Post))
     {
-
-        <div class="form-box">
-            <div><strong>Send Inquiry</strong> |Inquiry List</div>
-            @Html.TextBoxFor(model => model.Name, new { placeholder = "Title", rows = 6, style = "width: 100%;" })
-            <br />
-            <br />
-
-            @Html.TextAreaFor(model => model.Message, new { placeholder = "Message", rows = 6, style = "width: 100%;" })
-            <br />
-            <br />
-
-            <div style="text-align: right;">
-                <input type="submit" value="Submit Inquiry" style="background-color: yellow;" />
-            </div>
-
+        
+        <div class="Inquiry">
+            <div>Your Inquiry</div>
         </div>
         <br />
         <br />
