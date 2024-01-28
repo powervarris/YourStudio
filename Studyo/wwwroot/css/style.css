@@ -1,6 +1,4 @@
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: #fff; }
+
 
 p {
   color: #b3b3b3;
@@ -52,8 +50,10 @@ h2 {
       box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1); }
 
 .half .bg {
-  background-size: cover;
-  background-position: center; }
+    background-size: cover;
+    background-position: center;
+    background-image: url(~/Background.png);
+}
 
 .half a {
   color: #888;
@@ -148,3 +148,86 @@ h2 {
     border-color:black;
     font-family:'Comic Sans MS'
 }
+
+.menu {
+    height: 100%;
+    width: 80px;
+    margin-top: -2px;
+    margin-left: -190px
+}
+
+.logonav{
+    height:100%;
+    width:150px;
+    margin-left:100px;
+}
+.logonav2{
+    height:100%;
+    width:530px;
+    margin-left:-70px;
+}
+
+
+
+
+
+
+.gall {
+    font-family: 'Palatino Linotype';
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 50px;
+    padding-right: 30px;
+}
+
+.form-inline input .form-control{
+    width: 200px;
+}
+
+.navbaradjust {
+    margin-bottom: 200px;
+}
+li{
+    font-family:Calibri;
+    font-size:25px
+}
+.form-control{
+    font-family:'Palatino Linotype'
+}
+h1{
+    top:-150px;
+    left:50px;
+    font-family:Constantia;
+    font-size:50px;
+    position:absolute;
+}
+a{
+    font-family:Constantia;
+}
+
+
+.bg {
+    flex: 1;
+    height: 100vh; /* Adjust the height as needed */
+    background-position: right;
+    position: absolute;
+    top: 100px;
+    left: 1000px;
+    right: 0;
+    bottom: 10px;
+}
+#logo{
+    margin-bottom:300px;
+    height:20%;
+}
+#img1 img {
+    
+    width:300px;
+    height:40%;
+    position:absolute;
+    margin-top:100px;
+    margin-left:50px;
+}
+
+

@@ -5,8 +5,16 @@
       "PackagePath": "staticwebassets\\Studyo.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\Background.png",
+      "PackagePath": "staticwebassets\\Background.png"
+    },
+    {
       "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\bg_1.jpg",
       "PackagePath": "staticwebassets\\bg_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\css\\Register.css",
+      "PackagePath": "staticwebassets\\css\\Register.css"
     },
     {
       "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\css\\bootstrap.min.css",
@@ -31,6 +39,22 @@
     {
       "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\fonts\\style.css",
       "PackagePath": "staticwebassets\\fonts\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\greg2.JPG",
+      "PackagePath": "staticwebassets\\greg2.JPG"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\img1.JPG",
+      "PackagePath": "staticwebassets\\img1.JPG"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\img2.JPG",
+      "PackagePath": "staticwebassets\\img2.JPG"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\img3.JPG",
+      "PackagePath": "staticwebassets\\img3.JPG"
     },
     {
       "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\js\\bootstrap.min.js",
@@ -281,8 +305,28 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\logo.png",
+      "PackagePath": "staticwebassets\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\logo2.png",
+      "PackagePath": "staticwebassets\\logo2.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\reg1.JPG",
+      "PackagePath": "staticwebassets\\reg1.JPG"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\reg3.JPG",
+      "PackagePath": "staticwebassets\\reg3.JPG"
+    },
+    {
       "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\urstud.jpg",
       "PackagePath": "staticwebassets\\urstud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\yourstudio.jpg",
+      "PackagePath": "staticwebassets\\yourstudio.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Studyo.Microsoft.AspNetCore.StaticWebAssets.props",

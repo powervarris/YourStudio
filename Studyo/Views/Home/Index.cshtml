@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Login";
 }
 <!doctype html>
 <html lang="en">
@@ -22,27 +22,55 @@
     <title>Login #2</title>
   </head>
   <body>
-  <div class="d-lg-flex half">
-        <div class="bg order-1 order-md-2" style="background-image: url('urstud.jpg');"></div>
+    <div class="d-lg-flex half" style="background-image: url('background.png');">
+        <div class="d-lg-flex half">
+            <div class="d-lg-flex half"></div>
+
+        <div class="bg order-1 order-md-2" id="img1">
+
+            <img src="~/img2.jpg" style="transform:rotate(-10deg)"/>
+        </div>
+        <div class="bg order-1 order-md-2" id="img1">
+
+            <img src="~/img1.jpg" style="margin-left:310px; z-index:3" />
+        </div>
+
+
+        <div class="bg order-1 order-md-2" id="img1">
+
+            <img src="~/img3.jpg"style="margin-left:600px; transform:rotate(10deg)" />
+        </div>
+
+        </div>
+
+
+
     <div class="contents order-2 order-md-1">
+
+
       <div class="container">
-        <div class="row align-items-center justify-content-center">
+                <div class="row align-items-center justify-content-center" style="background-color:white">
           <div class="col-md-7">
-             <h3> <strong>Good Afternoon</strong></h3>
+            <div class="greeting-container">
+               <h3 id="greeting"><strong></strong></h3>
+             </div>
+             <div>
+
+
+
+             </div>
             <form action="#" method="post">
               <div class="form-group first">
-                <input type="text" class="form-control" placeholder="your-email@gmail.com" id="username">
+                <input type="text" class="form-control" placeholder="Username" id="username">
               </div>
               <div class="form-group last mb-3">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" placeholder="Your Password" id="password">
+                <input type="password" class="form-control" placeholder="Password" id="password">
               </div>
               <div class="d-flex mb-5 align-items-center">
-                <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
-                class="link-danger">Register</a></p>
-                <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span> 
+                <p class="" style="color:black">No Acccount Yet? <a class="link-danger" style="color:blue" asp-action="Register" asp-controller="Home">Sign up</a></p>
+                <span class="ml-auto"><a href="#" class="forgot-pass" style="color:blue">Forgot Password?</a></span> 
               </div>
-              <input type="submit" value="Log In" class="btn btn-block btn-primary">
+              <input type="submit" value="LOG IN" class="btn btn-block btn-primary" style="font-family:'Palatino Linotype';font-size:30px">
             </form>
           </div>
         </div>
@@ -53,5 +81,18 @@
     <script src="~/js/jquery-3.3.1.min.js"></script>
     <script src="~/js/main.js"></script>
     <script src="~/js/popper.min.js"></script>
+    <script>
+        var currentHour = new Date().getHours();
+
+        var greetingElement = document.getElementById("greeting");
+       
+        if (currentHour >= 0 && currentHour < 12) {
+            greetingElement.innerHTML = "<h1>GOOD MORNING</h1>";
+        } else if (currentHour >= 12 && currentHour < 18) {
+            greetingElement.innerHTML = "<h1>GOOD AFTERNOON</h1>";
+        } else {
+            greetingElement.innerHTML = "<h1>GOOD EVENING</h1>";
+        }
+    </script>
   </body>
 </html>

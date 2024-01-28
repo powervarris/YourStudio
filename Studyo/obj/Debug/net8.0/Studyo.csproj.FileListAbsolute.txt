@@ -28,4 +28,3 @@ C:\Users\LENOVO-15IMH05\source\repos\Studyo\Studyo\obj\Debug\net8.0\refint\Study
 C:\Users\LENOVO-15IMH05\source\repos\Studyo\Studyo\obj\Debug\net8.0\Studyo.pdb
 C:\Users\LENOVO-15IMH05\source\repos\Studyo\Studyo\obj\Debug\net8.0\Studyo.genruntimeconfig.cache
 C:\Users\LENOVO-15IMH05\source\repos\Studyo\Studyo\obj\Debug\net8.0\ref\Studyo.dll
-C:\Users\LENOVO-15IMH05\source\repos\Studyo\Studyo\obj\Debug\net8.0\Studyo.sourcelink.json
