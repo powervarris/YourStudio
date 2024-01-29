@@ -103,6 +103,22 @@ body {
     left: 0;
 }
 
+.menu-icon {
+    display: inline-block;
+    font-size: 24px;
+    margin: 20px 0px 10px 0px;
+    float:left;
+    color: #333;
+}
+
+    .menu-icon:before {
+        content: "\f0c9";
+    }
+
+    .menu-icon:hover:before {
+        content: "\f00d";
+    }
+
 .navbar-nav {
     float: right;
 }
