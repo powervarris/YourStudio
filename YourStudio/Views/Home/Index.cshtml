@@ -11,24 +11,10 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                            data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <!-- Left links -->
-                        <ul class="navbar-nav me-3">
-                            <li class="nav-item">
-                                <a class="nav-link active d-flex align-items-center" aria-current="page" href="#">
-                                    <i class="fas fa-bars pe-2 menu"></i>
-                                </a>
-                        </ul>
-                    </div>
                     <span>
-                        <a href="#" class="topnav"></a>
                         <img src="~/photos/logo.png" class="logonav" alt="">
                         <img src="~/photos/logo2.png" class="logonav2" alt="">
+                        <i class="fas fa-bars menu-icon"></i>
                     </span>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar">
@@ -69,24 +55,34 @@
 
 
     </header>
+
+    <div class="Inquiry">
+        <div>YOUR INQUIRY</div>
+    </div>
+
     @using (Html.BeginForm("Submit", "Inquiry", FormMethod.Post))
     {
 
         <div class="form-box">
-            <div><strong>Send Inquiry</strong> |Inquiry List</div>
-            @Html.TextBoxFor(model => model.Name, new { placeholder = "Title", rows = 6, style = "width: 100%;" })
+            <div><strong>Send Inquiry</strong> | Inquiry List</div>
+            <br />
+            @Html.TextBoxFor(model => model.Name, new { placeholder = "Title", rows = 6, style = "width: 100%; border-radius: 5px;" })
             <br />
             <br />
 
-            @Html.TextAreaFor(model => model.Message, new { placeholder = "Message", rows = 6, style = "width: 100%;" })
+            @Html.TextAreaFor(model => model.Message, new { placeholder = "Message", rows = 6, style = "width: 100%; border-radius: 5px;" })
             <br />
             <br />
 
-            <div style="text-align: right;">
-                <input type="submit" value="Submit Inquiry" style="background-color: yellow;" />
+            <div class="BtnCont">
+                <input type="submit" value="DRAFT" id="DrfBtn" />
+                <input type="submit" value="SEND" id="SbtBtn" />
             </div>
 
         </div>
+        <br />
+        <br />
+        <br />
         <br />
         <br />
 
@@ -99,7 +95,7 @@
             <div><strong>General |</strong> Photo Studio Experience</div>
 
             <br />
-            <span class="additional-text">Click the button to toggle visibility.</span>
+            <span class="additional-text">CAN WE GET THE <strong>DIGITAL COPY?</strong></span>
             <span id="toggleText1" class="clickable-text" onclick="toggleMessage('toggleText1', 'hiddenMessage1')">V</span>
 
             <div id="hiddenMessage1" class="hidden-message">
@@ -111,13 +107,22 @@
         </section>
 
         <section class="faq2">
-            <div><strong>General |</strong> Photo Studio Experience</div>
-
-            <br />
-            <span class="additional-text">Click the button to toggle visibility.</span>
+            <span class="additional-text">DO YOU ACCEPT <strong>WALK-IN CLIENTS</strong></span>
             <span id="toggleText2" class="clickable-text" onclick="toggleMessage('toggleText2', 'hiddenMessage2')">V</span>
 
             <div id="hiddenMessage2" class="hidden-message">
+                <br />
+                <p>This is the second hidden message. Click the text to toggle visibility.</p>
+            </div>
+
+            <hr />
+        </section>
+
+        <section class="faq3">
+            <span class="additional-text">WHERE ARE YOU <strong>LOCATED?</strong></span>
+            <span id="toggleText3" class="clickable-text" onclick="toggleMessage('toggleText3', 'hiddenMessage3')">V</span>
+
+            <div id="hiddenMessage3" class="hidden-message">
                 <br />
                 <p>This is the second hidden message. Click the text to toggle visibility.</p>
             </div>

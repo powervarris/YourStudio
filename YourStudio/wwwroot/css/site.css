@@ -23,15 +23,16 @@ body {
 
 .form-box {
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 5px 30px 60px 30px;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 25px;
     background-color: white;
 }
 
 .hidden-message {
     display: none;
     text-indent: 20px;
+    padding-left: 20px;
 }
 
 .clickable-text {
@@ -46,6 +47,7 @@ body {
     font-size: 18px;
     display: inline-block;
     vertical-align: middle;
+    padding-left: 20px;
 }
 
 .FAQ {
@@ -58,8 +60,37 @@ body {
 .Inquiry {
     text-align: center;
     font-weight: bold;
-    font-size: 36px;
+    font-style: italic;
+    font-size: 48px;
     font-family: 'Palatino Linotype';
+}
+
+.BtnCont {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#SbtBtn {
+    background-color: #FFA629;
+    border-radius: 5px;
+    padding: 0px 20px 0px 20px;
+    font-family: 'Palatino Linotype';
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    border: 1px solid black;
+    margin-left: 20px;
+}
+
+#DrfBtn {
+    background-color: #B22222;
+    border-radius: 5px;
+    padding: 0px 20px 0px 20px;
+    font-family: 'Palatino Linotype';
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    border: 1px solid black;
 }
 
 .menu {
@@ -71,6 +102,22 @@ body {
     position: relative;
     left: 0;
 }
+
+.menu-icon {
+    display: inline-block;
+    font-size: 24px;
+    margin: 20px 0px 10px 0px;
+    float:left;
+    color: #333;
+}
+
+    .menu-icon:before {
+        content: "\f0c9";
+    }
+
+    .menu-icon:hover:before {
+        content: "\f00d";
+    }
 
 .navbar-nav {
     float: right;
