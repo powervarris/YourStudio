@@ -1,0 +1,149 @@
+<<<<<<< HEAD
+@model InquiryModel
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/wwwroot/css/site.css"/>
+</head>
+
+<body>
+    <header>
+
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                            data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- Left links -->
+                        <ul class="navbar-nav me-3">
+                            <li class="nav-item">
+                                <a class="nav-link active d-flex align-items-center" aria-current="page" href="#">
+                                    <i class="fas fa-bars pe-2 menu"></i>
+                                </a>
+                        </ul>
+                    </div>
+                    <span>
+                        <a href="#" class="topnav"></a>
+                        <img src="~/assets/logo.png" class="logonav" alt="">
+                        <img src="~/assets/logo2.png" class="logonav2" alt="">
+                    </span>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ml-auto navbar-right">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item active ">
+                            <a class="nav-link" href="#">Packages</a>
+                        </li>
+
+
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Booking
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Create Booking</a>
+                                <a class="dropdown-item" href="#">Booking List</a>
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+    </header>
+   
+
+    @using (Html.BeginForm("Submit", "Inquiry", FormMethod.Post))
+    {
+        
+        <div class="form-box">
+            <div><strong>Send Inquiry</strong> | Inquiry List</div> <br>
+            @Html.TextBoxFor(model => model.Name, new { placeholder = "Title", rows = 6, style = "width: 100%;" })
+            <br />
+            <br />
+
+            @Html.TextAreaFor(model => model.Message, new { placeholder = "Message", rows = 6, style = "width: 100%;" })
+            <br />
+            <br />
+
+            <div style="text-align: right;">
+                <input type="submit" value="Submit Inquiry" style="background-color: yellow;" />
+            </div>
+
+        </div>
+        <br />
+        <br />
+
+        <div class="FAQ">
+            <div>FREQUENTLY ASKED QUESTIONS</div>
+        </div>
+
+        <br />
+        <section class="faq1">
+            <div><strong>General |</strong> Photo Studio Experience</div>
+
+            <br />
+            <span class="additional-text">Click the button to toggle visibility.</span>
+            <span id="toggleText1" class="clickable-text" onclick="toggleMessage('toggleText1', 'hiddenMessage1')">V</span>
+
+            <div id="hiddenMessage1" class="hidden-message">
+                <br />
+                <p>This is the first hidden message. Click the text to toggle visibility.</p>
+            </div>
+
+            <hr />
+        </section>
+
+        <section class="faq2">
+            <div><strong>General |</strong> Photo Studio Experience</div>
+
+            <br />
+            <span class="additional-text">Click the button to toggle visibility.</span>
+            <span id="toggleText2" class="clickable-text" onclick="toggleMessage('toggleText2', 'hiddenMessage2')">V</span>
+
+            <div id="hiddenMessage2" class="hidden-message">
+                <br />
+                <p>This is the second hidden message. Click the text to toggle visibility.</p>
+            </div>
+
+            <hr />
+        </section>
+
+        <script>
+            function toggleMessage(toggleTextId, hiddenMessageId) {
+                var hiddenMessage = document.getElementById(hiddenMessageId);
+                var toggleText = document.getElementById(toggleTextId);
+                var currentDisplay = hiddenMessage.style.display;
+
+                hiddenMessage.style.display = (currentDisplay === 'none') ? 'block' : 'none';
+                toggleText.innerHTML = (currentDisplay === 'none') ? 'Λ' : 'V';
+            }
+        </script>
+
+    }
+</body>
+</html>
+>>>>>>> 3fbbd0c4cb73d88489e71b0736a9a3ec2a628fb0
+=======
+>>>>>>> 3bf1c8e2b33b1d199a22b0c6f945825de9666294
