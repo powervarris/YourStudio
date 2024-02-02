@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xQ+Zf7FWPTDNiCadj8OigEEPVI8EYmP06gSBDPF/PqQ=",
+  "Hash": "LJO7XfxvHUPMXPhKf5SrwVL6oYoV19qXWSh8UixLP8A=",
   "Source": "SE",
   "BasePath": "_content/SE",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Kenshin\\source\\repos\\SE\\SE\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SE.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Kenshin\\source\\repos\\SE\\SE\\wwwroot\\assets\\Background.png",
+      "SourceId": "SE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kenshin\\source\\repos\\SE\\SE\\wwwroot\\",
+      "BasePath": "_content/SE",
+      "RelativePath": "assets/Background.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\Background.png"
     },
     {
       "Identity": "C:\\Users\\Kenshin\\source\\repos\\SE\\SE\\wwwroot\\assets\\car1.JPG",

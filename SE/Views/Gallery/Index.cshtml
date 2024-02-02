@@ -124,54 +124,108 @@
                aria-label="Search">
         <i class="fas fa-search" aria-hidden="true"></i>
     </form>
+    <div class="navbaradjust">
+    <ul class="nav2list">
+        <li class="nav2">
+                All &nbsp;    &nbsp;     |
+        </li>
+        <li class="nav2">
+                Solo &nbsp;      |
+            </li>
+        <li class="nav2">
+                Family &nbsp;       |
+        </li>
+        <li class="nav2">
+                Fur Parents &nbsp;      |
 
-    <nav class="navbar navbar-expand-lg navbar-light ">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                        data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                    
-                </button>
-        
-            <div class="collapse navbar-collapse" id="navbaradjust">
-                    <ul class="navbar-nav ml-auto navbar-right " id="navbaradjust">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Gallery</a>
-                    </li>
-                    <li class="nav-item active ">
-                        <a class="nav-link" href="#">Packages</a>
-                    </li>
+        </li>
+            <li class="nav2">
+                Child
 
-                    <li class="nav-item active ">
-                        <a class="nav-link" href="#">Booking List</a>
-                    </li>
+            </li>
+    </ul>
+    </div>
 
-                    <li class="nav-item active ">
-                        <a class="nav-link" href="#">Booking</a>
-                    </li>
+    <div class="wrap">
+        <div class="">
+        <button class="button dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage Content   </button>
+            <div class="dropdown-menu">
+                
+                <a class="dropdown-item" href="#">Add</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Edit</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Delete</a>
+            </div>
+            </div>
 
-                    <li class="nav-item active ">
-                        <a class="nav-link" href="#">Inquiry</a>
-                    </li>
-
-                    <li class="nav-item active ">
-                        <a class="nav-link" href="#">Add Admin</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
-                    </li>
+    </div>
+    @{
+        var itemsCount = 20;
+    }
+    @for (int i = 0; i < itemsCount; i++)
+    {
+        <text>  <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="img_forest.jpg">
+                <img src="https://placehold.jp/300x400.png" alt="Forest" width="600" height="400">
+            </a>
+            </div>
+       </div></text>
+       
+    }
+  
 
 
-                </ul>
+    <div class="container mt-5">
+        <button id="uploadButton" class="btn btn-primary">Upload Photo</button>
+    </div>
+
+    <!-- Upload Photo Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="uploadModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Upload Photo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Your photo upload form can be added here -->
+                    <input type="file" id="fileInput" accept="image/*">
+                    <div id="placeholder">Placeholder for uploaded photo</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="uploadPhoto()">Upload</button>
+                </div>
             </div>
         </div>
-        </div>
-    </nav>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#uploadButton').click(function () {
+                $('#uploadModal').modal('show');
+            });
+        });
+
+        // You can customize the function to handle the photo upload
+        function uploadPhoto() {
+            // Add your logic here to handle the photo upload
+            alert('Photo uploaded!');
+            // Close the modal after handling the upload
+            $('#uploadModal').modal('hide');
+        }
+    </script>
+
+
+
+    
 
     <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.js"
             asp-fallback-src="~/lib/jquery/dist/jquery.js"

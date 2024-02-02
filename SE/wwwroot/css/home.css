@@ -1,5 +1,7 @@
 ﻿
-
+.body {
+    
+}
 
 .menu {
     height: 100%;
@@ -13,9 +15,15 @@
     left: 0;
 }
 
-.navbar-nav{
+.navbar-nav {
     margin-top: -20px;
     
+    
+}
+
+.nav-item .active {
+    gap: 9px;
+    margin-right: -10px;
 }
 .logonav {
     height: 100%;
@@ -463,4 +471,26 @@ body, html {
     margin-bottom:-60px;
     margin-right:-170px;
 }
+
+#navbar {
+    margin-left: 100px;
+    padding-left:50px;
+    
+}
+
+.navbar-nav {
+    font-family: 'Calibri';
+    font-size: 19px;
+    gap: 20px;
+    margin-left: 100px;
+    padding-left: 50px;
+    margin-right:-50px;
+}
+
+.navbar-right {
+    margin-left: 100px;
+}
+
+
+
 

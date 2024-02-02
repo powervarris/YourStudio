@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\SE.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Kenshin\\source\\repos\\SE\\SE\\wwwroot\\assets\\Background.png",
+      "PackagePath": "staticwebassets\\assets\\Background.png"
+    },
+    {
       "Id": "C:\\Users\\Kenshin\\source\\repos\\SE\\SE\\wwwroot\\assets\\car1.JPG",
       "PackagePath": "staticwebassets\\assets\\car1.JPG"
     },
