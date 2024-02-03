@@ -17,4 +17,9 @@
     <_ContentIncludedByDefault Remove="wwwroot\Background.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Booking\NewFolder\" />
+    <Folder Include="Views\NewFolder\" />
+  </ItemGroup>
+
 </Project>
