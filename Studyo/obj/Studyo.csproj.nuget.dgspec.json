@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\Studyo.csproj": {}
+    "C:\\Users\\Varris\\YourStudio\\Studyo\\Studyo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\Studyo.csproj": {
+    "C:\\Users\\Varris\\YourStudio\\Studyo\\Studyo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\Studyo.csproj",
+        "projectUniqueName": "C:\\Users\\Varris\\YourStudio\\Studyo\\Studyo.csproj",
         "projectName": "Studyo",
-        "projectPath": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\Studyo.csproj",
-        "packagesPath": "C:\\Users\\LENOVO-15IMH05\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\obj\\",
+        "projectPath": "C:\\Users\\Varris\\YourStudio\\Studyo\\Studyo.csproj",
+        "packagesPath": "C:\\Users\\Varris\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Varris\\YourStudio\\Studyo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\LENOVO-15IMH05\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Varris\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,6 +44,28 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
