@@ -2,5 +2,6 @@
 {
     public class BookingModel
     {
+        public DateTime dtmDate { get; set; }
     }
 }
