@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "uT3O5h7SJVM/xkFS4nYjk9nHBxEDXTjFxdgo0bVwPF6NiE18483KmiwUwN0g2BepplQUSJ6sm+8TqDPYFKBryw==",
+  "dgSpecHash": "F5HMMKtxl1yXRylAhKgMpTJVQB0LMjXO/4TaueEE1kZ54HguRHlueLOvYnutzHgKaPuJLDZwXzqcSveZ4oKjHw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO-15IMH05\\Desktop\\inquiry\\YourStudio\\YourStudio\\YourStudio.csproj",
+  "projectFilePath": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\YourStudio.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\LENOVO-15IMH05\\.nuget\\packages\\jquery\\1.12.4\\jquery.1.12.4.nupkg.sha512",
-    "C:\\Users\\LENOVO-15IMH05\\.nuget\\packages\\jquery.ui\\1.12.1.1\\jquery.ui.1.12.1.1.nupkg.sha512"
+    "C:\\Users\\phone\\.nuget\\packages\\jquery\\1.12.4\\jquery.1.12.4.nupkg.sha512",
+    "C:\\Users\\phone\\.nuget\\packages\\jquery.ui\\1.12.1.1\\jquery.ui.1.12.1.1.nupkg.sha512"
   ],
   "logs": []
 }

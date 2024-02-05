@@ -5,6 +5,38 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+.DAT, .PST {
+    display: inline-block;
+    padding-top: 100px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Palatino Linotype';
+}
+
+.DAT {
+    font-size: 30px;
+}
+
+.PST {
+    font-size: 24px;
+    margin-left: 340px
+}
+
+.btnT {
+    float
+    background-color: white;
+    border: solid;
+    border-width: thin;
+    color: black;
+    padding: 0px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 10px;
+    cursor: pointer;
+}
+
+
 *,
 *::before,
 *::after {
@@ -25,10 +57,8 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
     text-align: left;
     background-image: url(../photos/Background.png)
-    
 }
 
 .text{
@@ -452,7 +482,7 @@ pre {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: -15px;
-  margin-left: -15px; }
+  margin-left: -50px; }
 
 .no-gutters {
   margin-right: 0;
@@ -8106,11 +8136,10 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  font-family: "Lato", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.8;
   font-weight: normal;
-  color: gray; }
+   }
 
 a {
   -webkit-transition: .3s all ease;
@@ -8134,7 +8163,7 @@ h1, h2, h3, h4, h5,
   background: #7e0cf5 !important; }
 
 .ftco-section {
-  padding: 7em 0;
+    float: left;
 }
 
 
@@ -8260,7 +8289,7 @@ h1, h2, h3, h4, h5,
         transition: color,background .4s ease-in-out 0s; }
       .table .row .cell.active span {
         color: #fff;
-        background-color: pink;
+        background-color: darkseagreen;
         border-radius: 4px; }
       .table .row .cell span:hover{
           background-color:lightslategrey;
