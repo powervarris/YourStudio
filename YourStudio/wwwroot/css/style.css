@@ -22,8 +22,12 @@
     margin-left: 340px
 }
 
+.time {
+    display: block;
+    margin: 10px 0;
+}
+
 .btnT {
-    float
     background-color: white;
     border: solid;
     border-width: thin;
@@ -63,6 +67,7 @@ body {
 
 .text{
     cursor:pointer;
+    font-size: 24px;
 }
 
 hr {
