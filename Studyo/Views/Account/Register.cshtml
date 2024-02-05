@@ -61,26 +61,26 @@
                         </div>
                         <div>
                         </div>
-                        <form action="#" method="post">
+                        <form asp-action="AddUser" method="post">
                             <div class="form-group first">
-                                <input type="text" class="form-control" placeholder="Username" id="username">
+                                <input type="text" class="form-control" name="UserName" placeholder="Username" id="username">
                             </div>
                             <div class="form-group last mb-3">
-                                <input type="password" class="form-control" placeholder="Password" id="password">
+                                <input type="password" class="form-control" name="password" placeholder="Password" id="password">
                             </div><div class="form-group first">
-                                <input type="text" class="form-control" placeholder="Confirm Password" id="username">
+                                <input type="password" class="form-control" placeholder="Confirm Password" id="username">
                             </div>
                             <div class="form-group last mb-3">
-                                <input type="password" class="form-control" placeholder="Email Address" id="password">
+                                <input type="email" class="form-control" name="Email" placeholder="Email Address" id="password">
                             </div>
                             <div class="form-group last mb-3">
-                                <input type="password" class="form-control" placeholder="Phone Number" id="password">
+                                <input type="text" class="form-control" name="mobileNumber" placeholder="Phone Number" id="password">
                             </div>
 
                             <div class="d-flex mb-5 align-items-center">
                                 <input class="form-check-input" type="checkbox" style="margin-left:11"  value="" id="termsCheck" required>
                                 <label class="form-check-label" for="termsCheck" style="font-family:Calibri;">
-                                   By signing up, you agree to Your Studio's' <a href="#" style="color: black; font-family:Calibri">Terms and Conditions</a>and <a href="#" style="color:black; font-family:Calibri ">Privacy Policy</a> 
+                                   By signing up, you agree to Your Studio's' <a href="#" style="color: black; font-family:Calibri"> Terms and Conditions </a>and <a href="#" style="color:black; font-family:Calibri ">Privacy Policy</a> 
                                 </label>
                             </div>
                             <input type="submit" value="REGISTER" class="btn btn-block btn-primary" style="font-family:'Palatino Linotype';font-size:30px">
@@ -101,6 +101,9 @@
     <script src="~/js/main.js"></script>
     <script src="~/js/popper.min.js"></script>
     <script>
+    
+        
+    
         var currentHour = new Date().getHours();
 
         var greetingElement = document.getElementById("greeting");

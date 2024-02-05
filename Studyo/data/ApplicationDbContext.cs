@@ -26,6 +26,23 @@ namespace Studyo.data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            
+            modelBuilder.Entity<User>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+                entity.HasMany(e => e.Inquiries).WithOne(e => e.accountUser).HasForeignKey(e=>e.Id);
+                entity.Property(e => e.password).IsRequired();
+                entity.Property(e => e.mobileNumber).IsRequired();
+                entity.Property(e => e.dateCreated).IsRequired();
+            });
+            
+            modelBuilder.Entity<Inquiry>(entity =>
+            {
+                entity.HasKey(e => e.Id); //primary key
+                entity.HasOne(e => e.accountUser).WithMany(e => e.Inquiries).HasForeignKey(e => e.userID);
+                entity.Property(e => e.Name).IsRequired();
+                entity.Property(e => e.Message).IsRequired();
+            });
 
             // Add entity configurations here
             modelBuilder.Entity<MyLog>(entity =>

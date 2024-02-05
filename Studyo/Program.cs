@@ -5,7 +5,7 @@ using Studyo.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection String")));
+    options.UseMySQL(builder.Configuration.GetConnectionString("Default") ?? throw new InvalidOperationException("Connection String")));
 
 builder.Services.AddDefaultIdentity<User>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
@@ -22,12 +22,25 @@ if (!app.Environment.IsDevelopment())
 }
 app.UseStaticFiles();
 
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<ApplicationDbContext>();
+    context.Database.EnsureDeleted();
+    context.Database.EnsureCreated();
+}
+
+
+
 app.UseRouting();
 
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Account}/{action=Index}/{id?}");
 
-app.Run();
+
+
+app.Run(); 

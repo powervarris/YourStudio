@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
     },
     {
+      "Id": "C:\\Users\\Varris\\YourStudio\\Studyo\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
       "Id": "C:\\Users\\Varris\\YourStudio\\Studyo\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
@@ -311,6 +315,22 @@
     {
       "Id": "C:\\Users\\Varris\\YourStudio\\Studyo\\wwwroot\\logo2.png",
       "PackagePath": "staticwebassets\\logo2.png"
+    },
+    {
+      "Id": "C:\\Users\\Varris\\YourStudio\\Studyo\\wwwroot\\photos\\Background.png",
+      "PackagePath": "staticwebassets\\photos\\Background.png"
+    },
+    {
+      "Id": "C:\\Users\\Varris\\YourStudio\\Studyo\\wwwroot\\photos\\logo.png",
+      "PackagePath": "staticwebassets\\photos\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Varris\\YourStudio\\Studyo\\wwwroot\\photos\\logo2.png",
+      "PackagePath": "staticwebassets\\photos\\logo2.png"
+    },
+    {
+      "Id": "C:\\Users\\Varris\\YourStudio\\Studyo\\wwwroot\\photos\\logofull.png",
+      "PackagePath": "staticwebassets\\photos\\logofull.png"
     },
     {
       "Id": "C:\\Users\\Varris\\YourStudio\\Studyo\\wwwroot\\reg1.JPG",

@@ -59,12 +59,12 @@
 
 
              </div>
-            <form action="#" method="post">
+            <form asp-action="loginUser" method="post">
               <div class="form-group first">
-                <input type="text" class="form-control" placeholder="Username" id="username">
+                <input type="text" class="form-control" name="UserName" placeholder="Username" id="username">
               </div>
               <div class="form-group last mb-3">
-                <input type="password" class="form-control" placeholder="Password" id="password">
+                <input type="password" class="form-control" placeholder="Password" name="password" id="password">
               </div>
               <div class="d-flex mb-5 align-items-center">
                 <p class="" style="color:black">No Acccount Yet? <a class="link-danger" style="color:blue" asp-action="Register" asp-controller="Account">Sign up</a></p>
