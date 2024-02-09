@@ -25,7 +25,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<div class="calendar">
+					<div id="calendar" class="calendar">
 						<div class="header">
 							<a data-action="prev-month" href="javascript:void(0)" title="Previous Month"><i></i></a>
 							<div class="text" data-render="month-year"></div>
@@ -45,41 +45,42 @@
 		</div>
 	</section>
 
-	<section style="position: relative; margin-top: 70px;">
+	<section style="position: relative; margin-top: 85px;">
 		<div style="position: absolute; top: 50%; left: 47%; transform: translate(-50%, -50%); font-family: 'Palatino Linotype';">PLACEHOLDER</div>
 	</section>
 
 	<section class="time">
 		<br />
 		<div style="justify-content: center;">
-			<button type="button" class="btnT">09:30 am</button>
-			<button type="button" class="btnT">10:00 am</button>
+			<div class="btnT" data-original-color="white">09:30 am</div>
+			<div class="btnT" data-original-color="white">10:00 am</div>
 		</div>
 	</section>
 	<section class="time">
 		<div style="justify-content: center;">
-			<button type="button" class="btnT">10:30 am</button>
-			<button type="button" class="btnT">11:00 am</button>
+			<div class="btnT" data-original-color="white">10:30 am</div>
+			<div class="btnT" data-original-color="white">11:00 am</div>
 		</div>
 	</section>
 	<section class="time">
 		<div style="justify-content: center;">
-			<button type="button" class="btnT">01:30 am</button>
-			<button type="button" class="btnT">02:00 pm</button>
+			<div class="btnT" data-original-color="white">01:30 pm</div>
+			<div class="btnT" data-original-color="white">02:00 pm</div>
 		</div>
 	</section>
 	<section class="time">
 		<div style="justify-content: center;">
-			<button type="button" class="btnT">02:30 pm</button>
-			<button type="button" class="btnT">03:00 pm</button>
+			<div class="btnT" data-original-color="white">02:30 pm</div>
+			<div class="btnT" data-original-color="white">03:00 pm</div>
 		</div>
 	</section>
 	<section class="time">
 		<div style="justify-content: center;">
-			<button type="button" class="btnT">03:30 pm</button>
-			<button type="button" class="btnT">04:00 pm</button>
+			<div class="btnT" data-original-color="white">03:30 pm</div>
+			<div class="btnT" data-original-color="white">04:00 pm</div>
 		</div>
 	</section>
+	<div id="slctTime"></div>
     <link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" />
 
     @section scripts {
@@ -91,21 +92,42 @@
 		<script src="~/js/popper.js"></script>
 		<script src="~/js/main.js"></script>
 
-
-        <script>
-
-            $(function () {
-                $(".datepicker").datepicker({
-                    dateFormat: "yy/mm/dd",
-                    changeMonth: true,
-                    changeYear: true,
-                    yearRange: "2024:2029"
-                    buttonText: "<i class='fa fa-calendar'></i>"
-                });
-            });
-        </script>
-
     }
+
+	
+	<script>
+		$(document).ready(function () {
+			var $prevButton = null;
+
+			$(".btnT").on("mousedown", function () {
+				if ($prevButton && $prevButton[0] !== this) {
+					$prevButton.addClass("released").removeClass("pressed");
+					$prevButton.css("background-color", $prevButton.data("original-color"));
+				}
+				$prevButton = $(this);
+				$(this).addClass("pressed").removeClass("released");
+				$(this).css("background-color", "grey");
+			});
+
+			$(".btnT").on("mouseup mouseleave", function () {
+				// Do nothing
+			});
+
+			$(".btnT").on("click", function () {
+				$prevButton = $(this);
+			});
+		});
+
+		document.addEventListener('DOMContentLoaded', function () {
+			document.querySelectorAll('.time .btnT').forEach(function (button) {
+				button.addEventListener('click', function () {
+					var value = this.textContent;
+					document.getElementById('slctTime').textContent = value;
+					console.log('Selected time:', value);
+				});
+			});
+		});
+	</script>
 
 </body>
 </html>

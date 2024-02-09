@@ -28,16 +28,29 @@
 }
 
 .btnT {
-    background-color: white;
-    border: solid;
-    border-width: thin;
-    color: black;
-    padding: 0px 20px;
-    text-decoration: none;
     display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: lightgrey;
+    color: #333;
     font-size: 16px;
-    margin: 4px 10px;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.pressed {
+    background-color: grey;
+    color: white;
+}
+
+.released {
+    background-color: lightgrey;
+    color: #333;
 }
 
 
