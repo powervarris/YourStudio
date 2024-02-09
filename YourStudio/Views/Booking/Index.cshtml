@@ -1,0 +1,133 @@
+@model BookingModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+    <div class="DAT inline">
+        <div>SELECT DATE AND TIME</div>
+    </div>
+
+    <div class="PST inline">
+        <div>Philippine Standard Time (GMT + 8)</div>
+    </div>
+
+    <hr />
+
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div id="calendar" class="calendar">
+						<div class="header">
+							<a data-action="prev-month" href="javascript:void(0)" title="Previous Month"><i></i></a>
+							<div class="text" data-render="month-year"></div>
+							<a data-action="next-month" href="javascript:void(0)" title="Next Month"><i></i></a>
+						</div>
+						<div class="months" data-flow="left">
+							<div class="month month-a">
+								<div class="render render-a"></div>
+							</div>
+							<div class="month month-b">
+								<div class="render render-b"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section style="position: relative; margin-top: 85px;">
+		<div style="position: absolute; top: 50%; left: 47%; transform: translate(-50%, -50%); font-family: 'Palatino Linotype';">PLACEHOLDER</div>
+	</section>
+
+	<section class="time">
+		<br />
+		<div style="justify-content: center;">
+			<div class="btnT" data-original-color="white">09:30 am</div>
+			<div class="btnT" data-original-color="white">10:00 am</div>
+		</div>
+	</section>
+	<section class="time">
+		<div style="justify-content: center;">
+			<div class="btnT" data-original-color="white">10:30 am</div>
+			<div class="btnT" data-original-color="white">11:00 am</div>
+		</div>
+	</section>
+	<section class="time">
+		<div style="justify-content: center;">
+			<div class="btnT" data-original-color="white">01:30 pm</div>
+			<div class="btnT" data-original-color="white">02:00 pm</div>
+		</div>
+	</section>
+	<section class="time">
+		<div style="justify-content: center;">
+			<div class="btnT" data-original-color="white">02:30 pm</div>
+			<div class="btnT" data-original-color="white">03:00 pm</div>
+		</div>
+	</section>
+	<section class="time">
+		<div style="justify-content: center;">
+			<div class="btnT" data-original-color="white">03:30 pm</div>
+			<div class="btnT" data-original-color="white">04:00 pm</div>
+		</div>
+	</section>
+	<div id="slctTime"></div>
+    <link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" />
+
+    @section scripts {
+
+        <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+		<script src="~/bootstraps.min.js"></script>
+
+		<script src="~/js/jquery.min.js"></script>
+		<script src="~/js/popper.js"></script>
+		<script src="~/js/main.js"></script>
+
+    }
+
+	
+	<script>
+		$(document).ready(function () {
+			var $prevButton = null;
+
+			$(".btnT").on("mousedown", function () {
+				if ($prevButton && $prevButton[0] !== this) {
+					$prevButton.addClass("released").removeClass("pressed");
+					$prevButton.css("background-color", $prevButton.data("original-color"));
+				}
+				$prevButton = $(this);
+				$(this).addClass("pressed").removeClass("released");
+				$(this).css("background-color", "grey");
+			});
+
+			$(".btnT").on("mouseup mouseleave", function () {
+				// Do nothing
+			});
+
+			$(".btnT").on("click", function () {
+				$prevButton = $(this);
+			});
+		});
+
+		document.addEventListener('DOMContentLoaded', function () {
+			document.querySelectorAll('.time .btnT').forEach(function (button) {
+				button.addEventListener('click', function () {
+					var value = this.textContent;
+					document.getElementById('slctTime').textContent = value;
+					console.log('Selected time:', value);
+				});
+			});
+		});
+	</script>
+
+</body>
+</html>

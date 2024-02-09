@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using YourStudio.Models;
 
+
 namespace YourStudio.Controllers
 {
     public class HomeController : Controller
@@ -18,15 +19,14 @@ namespace YourStudio.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        [HttpPost]
+        public ActionResult Submit(InquiryModel inquiry)
         {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction("Index");
+            }
+            return View("~/Views/Inquiry/Index.cshtml", inquiry);
         }
     }
 }
