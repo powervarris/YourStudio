@@ -81,6 +81,7 @@
 		</div>
 	</section>
 	<div id="slctTime"></div>
+	<div id="slctDate"></div>
     <link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" />
 
     @section scripts {
@@ -116,15 +117,18 @@
 			$(".btnT").on("click", function () {
 				$prevButton = $(this);
 			});
-		});
 
-		document.addEventListener('DOMContentLoaded', function () {
-			document.querySelectorAll('.time .btnT').forEach(function (button) {
-				button.addEventListener('click', function () {
-					var value = this.textContent;
-					document.getElementById('slctTime').textContent = value;
-					console.log('Selected time:', value);
-				});
+			$(document).on("click", ".table .row .cell span", function () {
+				var selectedDate = $(this).text();
+				var anotherValue = $(this).siblings(".calendar .header.active .text").text(); 
+				$("#slctDate").text('Selected Date: ' + selectedDate + ' ' + anotherValue);
+				console.log('Selected date:', selectedDate, ' ', anotherValue);
+			});
+
+			$(".time .btnT").on("click", function () {
+				var selectedTime = $(this).text();
+				$("#slctTime").text('Selected Time: ' + selectedTime);
+				console.log('Selected time:', selectedTime);
 			});
 		});
 	</script>
