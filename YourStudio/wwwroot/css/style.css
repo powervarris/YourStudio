@@ -52,6 +52,16 @@
     color: #333;
 }
 
+.Srvc {
+    position: absolute;
+    top: 33%;
+    right: 25%;
+    transform: translate(-50%);
+    font-family: 'Palatino Linotype';
+    font-weight:bold;
+    font-size: 24px;
+}
+
 
 *,
 *::before,

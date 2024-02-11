@@ -80,8 +80,15 @@
 			<div class="btnT" data-original-color="white">04:00 pm</div>
 		</div>
 	</section>
+
+	<section id="Srvc">
+		<div >Service Details</div>
+		<div style="font-family: 'Palatino Linotype';">PLACEHOLDER USER</div>
+		<div
+		<div></div>
+	</section>
 	<div id="slctTime"></div>
-	<div id="slctDate"></div>
+	
     <link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" />
 
     @section scripts {
@@ -127,7 +134,7 @@
 
 			$(".time .btnT").on("click", function () {
 				var selectedTime = $(this).text();
-				$("#slctTime").text('Selected Time: ' + selectedTime);
+				$("#slctTime").text('at ' + selectedTime);
 				console.log('Selected time:', selectedTime);
 			});
 		});
