@@ -150,15 +150,66 @@
         <div class="">
         <button class="button dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage Content   </button>
             <div class="dropdown-menu">
-                
-                <a class="dropdown-item" href="#">Add</a>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#uploadModal">Add</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Edit</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Delete</a>
             </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="uploadModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="uploadModalLabel">Upload Image</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Your image upload form goes here -->
+                            <form id="imageUploadForm" enctype="multipart/form-data">
+                                <input type="file" name="image" id="image" class="form-control-file">
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="uploadButton">Upload</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
 
+
+        <script>
+            // JavaScript code to handle image upload
+            $(document).ready(function () {
+                $('#uploadButton').click(function () {
+                    var formData = new FormData();
+                    var image = $('#image')[0].files[0];
+                    formData.append('image', image);
+
+                    $.ajax({
+                        url: '/upload-image', // Replace this with the endpoint to handle image upload
+                        type: 'POST',
+                        data: formData,
+                        contentType: false,
+                        processData: false,
+                        success: function (response) {
+                            // Handle success response
+                            console.log('Image uploaded successfully');
+                            $('#uploadModal').modal('hide');
+                        },
+                        error: function (xhr, status, error) {
+                            // Handle error response
+                            console.error('Error uploading image:', error);
+                        }
+                    });
+                });
+            });
+        </script>
     </div>
     @{
         var itemsCount = 20;
@@ -174,56 +225,15 @@
        </div></text>
        
     }
-  
 
 
-    <div class="container mt-5">
-        <button id="uploadButton" class="btn btn-primary">Upload Photo</button>
-    </div>
 
-    <!-- Upload Photo Modal -->
-    <div class="modal" tabindex="-1" role="dialog" id="uploadModal">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Upload Photo</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <!-- Your photo upload form can be added here -->
-                    <input type="file" id="fileInput" accept="image/*">
-                    <div id="placeholder">Placeholder for uploaded photo</div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" onclick="uploadPhoto()">Upload</button>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#uploadButton').click(function () {
-                $('#uploadModal').modal('show');
-            });
-        });
-
-        // You can customize the function to handle the photo upload
-        function uploadPhoto() {
-            // Add your logic here to handle the photo upload
-            alert('Photo uploaded!');
-            // Close the modal after handling the upload
-            $('#uploadModal').modal('hide');
-        }
-    </script>
-
-
 
     
 
