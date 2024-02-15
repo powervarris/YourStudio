@@ -7,4 +7,9 @@ public class BookingController : Controller
     {
         return View();
     }
+
+	public IActionResult BList()
+	{
+		return View();
+	}
 }

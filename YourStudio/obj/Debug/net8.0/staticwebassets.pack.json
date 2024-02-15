@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\YourStudio.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\css\\blist.css",
+      "PackagePath": "staticwebassets\\css\\blist.css"
+    },
+    {
       "Id": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\css\\bootstraps\\_media.css",
       "PackagePath": "staticwebassets\\css\\bootstraps\\_media.css"
     },

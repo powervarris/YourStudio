@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Tt7zHEmZvUZDE37hnqNjSVJxb8pqgAkjQjkrwB/DqoE=",
+  "Hash": "kE1i1gF2D3emk1J/VBTUg/ODAqFfRgs8yd1qJK1GBOk=",
   "Source": "YourStudio",
   "BasePath": "_content/YourStudio",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\YourStudio.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\css\\blist.css",
+      "SourceId": "YourStudio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\",
+      "BasePath": "_content/YourStudio",
+      "RelativePath": "css/blist.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\blist.css"
     },
     {
       "Identity": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\css\\bootstraps\\_media.css",

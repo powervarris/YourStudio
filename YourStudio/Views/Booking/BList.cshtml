@@ -1,0 +1,55 @@
+﻿@model BookingModel
+@{
+	ViewBag.Title = "BList";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+	<section id="BList">
+		<div id="YB">YOUR BOOKING</div>
+	</section>
+
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div id="calendar" class="calendar">
+						<div class="header">
+							<a data-action="prev-month" href="javascript:void(0)" title="Previous Month"><i></i></a>
+							<div class="text" data-render="month-year"></div>
+							<a data-action="next-month" href="javascript:void(0)" title="Next Month"><i></i></a>
+						</div>
+						<div class="months" data-flow="left">
+							<div class="month month-a">
+								<div class="render render-a"></div>
+							</div>
+							<div class="month month-b">
+								<div class="render render-b"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" />
+
+	@section scripts {
+
+		<script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+		<script src="~/bootstraps.min.js"></script>
+
+		<script src="~/js/jquery.min.js"></script>
+		<script src="~/js/popper.js"></script>
+		<script src="~/js/main.js"></script>
+
+	}
+</html>
+</body>
