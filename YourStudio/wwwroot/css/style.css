@@ -23,10 +23,10 @@
 }
 
 .time-container .time {
-    margin-top: 50px;
+    margin-left: 120px
 }
 
-.btn-row {
+#btn-row {
     display: flex;
     margin-left: 50px;
 }
@@ -73,7 +73,7 @@
 #Srvc {
     position: absolute;
     top: 300px;
-    right: 150px;
+    right: 250px;
     transform: translate(-50%);
     font-family: 'Palatino Linotype';
 }
