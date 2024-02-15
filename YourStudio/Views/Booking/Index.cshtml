@@ -77,6 +77,8 @@
 	<section id="Srvc">
 		<div id="SrvcDtl">Service Details</div>
 		<div>PLACEHOLDER USER</div>
+		<div id="slctDate"></div>
+		<div id="slctTime"></div>
 		<div>20 mins</div>
 		<div>199</div>
 		<hr />
@@ -96,7 +98,6 @@
 
 	}
 
-
 	<script>
 		$(document).ready(function () {
 			var $prevButton = null;
@@ -112,25 +113,26 @@
 			});
 
 			$(".btnT").on("mouseup mouseleave", function () {
-				// Do nothing
 			});
 
 			$(".btnT").on("click", function () {
 				$prevButton = $(this);
 			});
 
-			$(document).on("click", ".table .row .cell span", function () {
+			$(document).on("click", ".table .row .cell span", ".calendar .header .text span", function () {
 				var selectedDate = $(this).text();
-				var anotherValue = $(this).siblings(".calendar .header.active .text").text();
-				$("#slctDate").text('Selected Date: ' + selectedDate + ' ' + anotherValue);
-				console.log('Selected date:', selectedDate, ' ', anotherValue);
-						$("#slctDate").text('Selected Date: ' + selectedDate);
-						console.log('Selected date:', selectedDate);
+				$("#slctDay").text('Selected Date: ' + selectedDate);
+				console.log('Selected date:', selectedDate);
+				var selectedMonth = $(".calendar .header .text span").text();
+				$("#slctDate").text('Selected Date: ' + selectedDate + ' ' + selectedMonth);
+				console.log('Selected month:', selectedMonth);
 			});
+
+
 
 			$(".time .btnT").on("click", function () {
 				var selectedTime = $(this).text();
-				$("#slctTime").text('at ' + selectedTime);
+				$("#slctTime").text('Selected Time: ' + selectedTime);
 				console.log('Selected time:', selectedTime);
 			});
 		});
