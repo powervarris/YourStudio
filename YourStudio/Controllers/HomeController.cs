@@ -18,6 +18,10 @@ namespace YourStudio.Controllers
         {
             return View();
         }
+        public IActionResult Inquiry()
+        {
+            return View();
+        }
 
         [HttpPost]
         public ActionResult Submit(InquiryModel inquiry)

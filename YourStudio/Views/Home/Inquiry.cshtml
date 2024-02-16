@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Messenger Style</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="Inquiry">
+        <div>YOUR INQUIRY</div>
+    </div>
+    <div class="form-box">
+    <div class="messenger-container">
+        <div class="conversations" id="conversations">
+            <div class="conversation" onclick="openChat('John')">
+                <p>John</p>
+                <span>Hi there!</span>
+            </div>
+            <div class="conversation" onclick="openChat('Jane')">
+                <p>Jane</p>
+                <span>How are you?</span>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="chat-window" id="chatWindow">
+            <div class="close-button" onclick="closeChat()">X</div>
+            <div class="chat-header">
+                <h2 id="chatTitle">Chat with John</h2>
+            </div>
+            <div class="messages">
+                <div class="message outgoing">
+                    <p>Hello there!</p>
+                </div>
+                <div class="message incoming">
+                    <p>Hi! How are you?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="FAQ">
+        <div>FREQUENTLY ASKED QUESTIONS</div>
+    </div>
+
+    <br />
+    <section class="faq1">
+        <div><strong>General |</strong> Photo Studio Experience</div>
+
+        <br />
+        <span class="additional-text">CAN WE GET THE <strong>DIGITAL COPY?</strong></span>
+        <span id="toggleText1" class="clickable-text" onclick="toggleMessage('toggleText1', 'hiddenMessage1')">V</span>
+
+        <div id="hiddenMessage1" class="hidden-message">
+            <br />
+            <p>This is the first hidden message. Click the text to toggle visibility.</p>
+        </div>
+
+        <hr />
+    </section>
+
+    <section class="faq2">
+        <span class="additional-text">DO YOU ACCEPT <strong>WALK-IN CLIENTS</strong></span>
+        <span id="toggleText2" class="clickable-text" onclick="toggleMessage('toggleText2', 'hiddenMessage2')">V</span>
+
+        <div id="hiddenMessage2" class="hidden-message">
+            <br />
+            <p>This is the second hidden message. Click the text to toggle visibility.</p>
+        </div>
+
+        <hr />
+    </section>
+
+    <section class="faq3">
+        <span class="additional-text">WHERE ARE YOU <strong>LOCATED?</strong></span>
+        <span id="toggleText3" class="clickable-text" onclick="toggleMessage('toggleText3', 'hiddenMessage3')">V</span>
+
+        <div id="hiddenMessage3" class="hidden-message">
+            <br />
+            <p>This is the second hidden message. Click the text to toggle visibility.</p>
+        </div>
+
+        <hr />
+    <script>
+            function openChat(contactName) {
+                document.getElementById("chatWindow").style.display = "block";
+                var senderName = contactName.split(' ')[0]; 
+
+                document.getElementById("chatTitle").textContent = "" + senderName;
+
+            var messagesContainer = document.querySelector(".messages");
+            messagesContainer.innerHTML = "";
+
+            // Palitan ng data natin
+            var messages = getMessages(contactName);
+
+            // Display outgoing messages
+            messages.forEach(function (message) {
+                if (message.type === "outgoing") {
+                    displayMessage(message);
+                }
+            });
+        }
+
+        function closeChat() {
+            document.getElementById("chatWindow").style.display = "none";
+        }
+
+        function getMessages(contactName) {
+            // pati to palit ng data natin
+            if (contactName === "John") {
+                return [
+                    { sender: "John", text: "Hi there!", type: "outgoing" },
+                    { sender: "John", text: "How's it going?", type: "outgoing" },
+                    { sender: "John", text: "Nice to see you!", type: "outgoing" }
+                ];
+            } else if (contactName === "Jane") {
+                return [
+                    { sender: "Jane", text: "Hello!", type: "incoming" },
+                    { sender: "Jane", text: "I'm doing well, thanks!", type: "incoming" }
+                ];
+            } else {
+                return [];
+            }
+        }
+
+        function displayMessage(message) {
+            var messagesContainer = document.querySelector(".messages");
+
+            var messageDiv = document.createElement("div");
+            messageDiv.className = "message outgoing";
+            messageDiv.innerHTML = '<p>' + message.text + '</p>';
+
+            messagesContainer.appendChild(messageDiv);
+        }
+    </script>
+</body>
+</html>
