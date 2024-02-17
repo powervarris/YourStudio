@@ -49,14 +49,35 @@
                         <i class="fas fa-bars"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="menu-adjust">
                         <!-- Left links -->
                         <ul class="navbar-nav me-3">
-                            <li class="nav-item">
-                                <a class="nav-link active d-flex align-items-center" aria-current="page" href="#">
-                                    <i class="fas fa-bars pe-2 menu"></i>
-                                </a>
-                                </ul>
+                            <li>
+                                <div id="mySidenav" class="sidenav">
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                    <a href="#">Username</a>
+                                    <a href="#">Email@email.com</a>
+                                    <a href="#">Mobile</a>
+                                    <a href="#">Logout</a>
                                 </div>
+                                <span onclick="openNav()">
+                                    <a class="nav-link active d-flex align-items-center" aria-current="page" href="#">
+                                        <i class="fas fa-bars pe-2 menu"></i>
+                                </span>
+                           
+                                 </li>
+                                </ul>
+                        </div>
+                                </div>
+                    <script>
+                        function openNav() {
+                            document.getElementById("mySidenav").style.width = "250px";
+                        }
+
+                        function closeNav() {
+                            document.getElementById("mySidenav").style.width = "0";
+                        }
+                    </script>
                     <span>
                         <a href="#" class="topnav"></a>
                         <img src="~/assets/logo.png" class="logonav" alt="">
