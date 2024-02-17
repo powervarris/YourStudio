@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
     },
     {
+      "Id": "C:\\Users\\Varris\\YourStudio\\Studyo\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
       "Id": "C:\\Users\\Varris\\YourStudio\\Studyo\\wwwroot\\css\\owl.carousel.min.css",
       "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
     },
@@ -33,8 +37,16 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\Varris\\YourStudio\\Studyo\\wwwroot\\css\\site2.css",
+      "PackagePath": "staticwebassets\\css\\site2.css"
+    },
+    {
       "Id": "C:\\Users\\Varris\\YourStudio\\Studyo\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Varris\\YourStudio\\Studyo\\wwwroot\\css\\style2.css",
+      "PackagePath": "staticwebassets\\css\\style2.css"
     },
     {
       "Id": "C:\\Users\\Varris\\YourStudio\\Studyo\\wwwroot\\favicon.ico",
@@ -319,6 +331,22 @@
     {
       "Id": "C:\\Users\\Varris\\YourStudio\\Studyo\\wwwroot\\photos\\Background.png",
       "PackagePath": "staticwebassets\\photos\\Background.png"
+    },
+    {
+      "Id": "C:\\Users\\Varris\\YourStudio\\Studyo\\wwwroot\\photos\\car1.JPG",
+      "PackagePath": "staticwebassets\\photos\\car1.JPG"
+    },
+    {
+      "Id": "C:\\Users\\Varris\\YourStudio\\Studyo\\wwwroot\\photos\\car2.JPG",
+      "PackagePath": "staticwebassets\\photos\\car2.JPG"
+    },
+    {
+      "Id": "C:\\Users\\Varris\\YourStudio\\Studyo\\wwwroot\\photos\\car3.JPG",
+      "PackagePath": "staticwebassets\\photos\\car3.JPG"
+    },
+    {
+      "Id": "C:\\Users\\Varris\\YourStudio\\Studyo\\wwwroot\\photos\\car4.JPG",
+      "PackagePath": "staticwebassets\\photos\\car4.JPG"
     },
     {
       "Id": "C:\\Users\\Varris\\YourStudio\\Studyo\\wwwroot\\photos\\logo.png",

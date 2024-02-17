@@ -55,7 +55,7 @@ namespace Studyo.Controllers
             var loginResult = await _signInManager.PasswordSignInAsync (usermodel.UserName, usermodel.password, false, false);
             if (loginResult.Succeeded)
             {
-                return RedirectToAction("clientInquiry", "Inquiry");
+                return RedirectToAction("Index", "Home");
                 
             }
             return RedirectToAction("Register");
