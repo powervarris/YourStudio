@@ -1,15 +1,18 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "lk5ozRDLw/aftnaM2GSAjjjLGa4P+83fLFF0JkHORqpm47zcLEwmeJuKPaWcbnporoWI6A837/2CyM49NjSa6A==",
-=======
-  "dgSpecHash": "kI32QOLDr8miquLRNWaniJ5NLFwjHhYYc9xjTdL0Bvg2tgNwSw6h+EkObvWaHzpjACScU8sMdR5mkWt9Rm4VWA==",
->>>>>>> b86f37463e27d0cb83192929e34a97d92de135fb
+  "dgSpecHash": "ky7ifMdl/CBUIvDj0EQiLSC/MjOBGiFBcLsBeqnXx7GZpVWfP7zEzsocAagVpAs7CgRjM6ES+rvGT49/e1l7Ig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO-15IMH05\\Desktop\\blist\\YourStudio\\YourStudio\\YourStudio.csproj",
+  "projectFilePath": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\YourStudio.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\LENOVO-15IMH05\\.nuget\\packages\\jquery\\1.12.4\\jquery.1.12.4.nupkg.sha512",
-    "C:\\Users\\LENOVO-15IMH05\\.nuget\\packages\\jquery.ui\\1.12.1.1\\jquery.ui.1.12.1.1.nupkg.sha512"
+    "C:\\Users\\phone\\.nuget\\packages\\jquery\\1.12.4\\jquery.1.12.4.nupkg.sha512",
+    "C:\\Users\\phone\\.nuget\\packages\\jquery.ui\\1.12.1.1\\jquery.ui.1.12.1.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
