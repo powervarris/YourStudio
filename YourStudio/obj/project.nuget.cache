@@ -1,18 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ky7ifMdl/CBUIvDj0EQiLSC/MjOBGiFBcLsBeqnXx7GZpVWfP7zEzsocAagVpAs7CgRjM6ES+rvGT49/e1l7Ig==",
+  "dgSpecHash": "rXJWy7ld/mXbsDb1Z+2IBjnm7xwbZp2M9XoeGRqDjoAdejJ2oojsdCUYP9fRzOayAe/DJeYsGP3aytSaVWVnRg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\YourStudio.csproj",
+  "projectFilePath": "C:\\Users\\phone\\Source\\Repos\\powervarris\\YourStudio\\YourStudio\\YourStudio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\phone\\.nuget\\packages\\jquery\\1.12.4\\jquery.1.12.4.nupkg.sha512",
     "C:\\Users\\phone\\.nuget\\packages\\jquery.ui\\1.12.1.1\\jquery.ui.1.12.1.1.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

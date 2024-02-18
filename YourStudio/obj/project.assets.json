@@ -67,11 +67,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\YourStudio.csproj",
+      "projectUniqueName": "C:\\Users\\phone\\Source\\Repos\\powervarris\\YourStudio\\YourStudio\\YourStudio.csproj",
       "projectName": "YourStudio",
-      "projectPath": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\YourStudio.csproj",
+      "projectPath": "C:\\Users\\phone\\Source\\Repos\\powervarris\\YourStudio\\YourStudio\\YourStudio.csproj",
       "packagesPath": "C:\\Users\\phone\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\obj\\",
+      "outputPath": "C:\\Users\\phone\\Source\\Repos\\powervarris\\YourStudio\\YourStudio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\phone\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -94,11 +94,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -129,16 +124,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
