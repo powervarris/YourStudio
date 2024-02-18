@@ -7,15 +7,16 @@
 <html>
 <head>
 	<link href="~/css/Booking/blist.css" rel="stylesheet" />
-	<link rel="stylesheet" href="~/css/Booking/jquery.css">
+	<link rel="stylesheet" href="~/css/Booking/code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="~/resources/demos/style.css">
 </head>
 <body>
 	<section class="Book">
 		<div id="YB">YOUR BOOKING</div>
 		<div id="VL"></div>
-		<div id="btn1" class="blist" data-original-color="white">August 05, 2023 | Saturday - 1:30 pm</div>
-		<div id="btn2" class="blist" data-original-color="white">September 06, 2023 | Saturday - 2:30 pm</div>
+		<div id="btn1" class="blist-button" data-original-color="white">August 05, 2023 | Saturday - 1:30 pm</div>
+		<div id="btn2" class="blist-button" data-original-color="white">August 06, 2023 | Saturday - 2:30 pm</div>
+		<div id="btn3" class="blist-button" data-original-color="white">August 07, 2023 | Saturday - 2:30 pm</div>
 	</section>
 
 	<section class="ftco-section">
@@ -33,39 +34,69 @@
 	<section class="time-container">
 		<section class="time" style="display: inline-block;">
 			<div class="btn-row">
-				<div class="btnT" data-original-color="white" id="btnT_0930">09:30 am</div>
-				<div class="btnT" data-original-color="white" id="btnT_1000">10:00 am</div>
+				<div class="btnT" data-original-color="white">09:30 am</div>
+				<div class="btnT" data-original-color="white">10:00 am</div>
 			</div>
 			<div class="btn-row">
-				<div class="btnT" data-original-color="white" id="btnT_1030">10:30 am</div>
-				<div class="btnT" data-original-color="white" id="btnT_1100">11:00 am</div>
+				<div class="btnT" data-original-color="white">10:30 am</div>
+				<div class="btnT" data-original-color="white">11:00 am</div>
 			</div>
 			<div class="btn-row">
-				<div class="btnT" data-original-color="white" id="btnT_1300">01:30 pm</div>
-				<div class="btnT" data-original-color="white" id="btnT_1400">02:00 pm</div>
+				<div class="btnT" data-original-color="white">01:30 pm</div>
+				<div class="btnT" data-original-color="white">02:00 pm</div>
 			</div>
 			<div class="btn-row">
-				<div class="btnT" data-original-color="white" id="btnT_1430">02:30 pm</div>
-				<div class="btnT" data-original-color="white" id="btnT_1500">03:00 pm</div>
+				<div class="btnT" data-original-color="white">02:30 pm</div>
+				<div class="btnT" data-original-color="white">03:00 pm</div>
 			</div>
 			<div class="btn-row">
-				<div class="btnT" data-original-color="white" id="btnT_1530">03:30 pm</div>
-				<div class="btnT" data-original-color="white" id="btnT_1600">04:00 pm</div>
+				<div class="btnT" data-original-color="white">03:30 pm</div>
+				<div class="btnT" data-original-color="white">04:00 pm</div>
 			</div>
 		</section>
 	</section>
 
 
 	@section scripts {
-		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+		<script src="~/https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="~/https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 	}
 
 	<script>
 		$(function () {
+			var highlightDays = {
+				btn1: new Date(2023, 8, 10),
+				btn2: new Date(2023, 7, 6),
+				btn3: new Date(2023, 7, 7)
+			};
+
+			$("#datepicker").datepicker();
+
+			$(".blist-button").on("click", function () {
+				var buttonId = $(this).attr("id");
+				var highlightDay = highlightDays[buttonId];
+
+				$(".ftco-section").show();
+				$(".time-container").show();
+
+				$("#datepicker").datepicker("setDate", highlightDay);
+
+				$("#datepicker").datepicker("option", "beforeShowDay", function (date) {
+					return [date.getDate() === highlightDay.getDate() && date.getMonth() === highlightDay.getMonth(), ""];
+				});
+			});
+
+			$("#datepicker").datepicker({
+				hideIfNoPrevNext: true,
+				beforeShowDay: function (date) {
+					return {
+						disabled: true
+					};
+				}
+			});
 
 			var $prevElement = null;
-			$(".blist").on("mousedown", function () {
+			$(".blist-button").on("mousedown", function () {
 				if ($prevElement && $prevElement[0] !== this) {
 					$prevElement.addClass("released").removeClass("pressed");
 					$prevElement.css("background-color", $prevElement.data("original-color"));
@@ -75,29 +106,11 @@
 				$(this).css("background-color", "#FFA629");
 			});
 
-			$(".blist").on("mouseup mouseleave", function () {
+			$(".blist-button").on("mouseup mouseleave", function () {
+				$prevElement.addClass("released").removeClass("pressed");
+				$prevElement.css("background-color", $prevElement.data("original-color"));
+				$prevElement = null;
 			});
-
-			$(".blist").on("click", function () {
-				$prevButton = $(this);
-			});
-
-			$("#datepicker").datepicker();
-
-			$("#btn1").on("click", function () {
-				$("#datepicker").datepicker("setDate", new Date(2023, 7, 5));
-				$(".ftco-section").show();
-				$(".time-container").show();
-				console.log("You clicked btn1");
-			});
-
-			$("#btn2").on("click", function () {
-				$("#datepicker").datepicker("setDate", new Date(2023, 8, 6));
-				$(".ftco-section").show();
-				$(".time-container").show();
-				console.log("You clicked btn2");
-			});
-
 		});
 	</script>
 
