@@ -1,0 +1,11 @@
+C:\Users\phone\source\repos\powervarris\YourStudio\YourStudio\obj\Debug\net7.0\YourStudio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\phone\source\repos\powervarris\YourStudio\YourStudio\obj\Debug\net7.0\YourStudio.AssemblyInfoInputs.cache
+C:\Users\phone\source\repos\powervarris\YourStudio\YourStudio\obj\Debug\net7.0\YourStudio.AssemblyInfo.cs
+C:\Users\phone\source\repos\powervarris\YourStudio\YourStudio\obj\Debug\net7.0\YourStudio.csproj.CoreCompileInputs.cache
+C:\Users\phone\source\repos\powervarris\YourStudio\YourStudio\obj\Debug\net7.0\YourStudio.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\phone\source\repos\powervarris\YourStudio\YourStudio\obj\Debug\net7.0\YourStudio.RazorAssemblyInfo.cache
+C:\Users\phone\source\repos\powervarris\YourStudio\YourStudio\obj\Debug\net7.0\YourStudio.RazorAssemblyInfo.cs
+C:\Users\phone\source\repos\powervarris\YourStudio\YourStudio\obj\Debug\net7.0\YourStudio.sourcelink.json
+C:\Users\phone\source\repos\powervarris\YourStudio\YourStudio\obj\Debug\net7.0\YourStudio.dll
+C:\Users\phone\source\repos\powervarris\YourStudio\YourStudio\obj\Debug\net7.0\refint\YourStudio.dll
+C:\Users\phone\source\repos\powervarris\YourStudio\YourStudio\obj\Debug\net7.0\YourStudio.pdb
