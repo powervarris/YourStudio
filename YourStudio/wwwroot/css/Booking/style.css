@@ -5,6 +5,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+.body {
+}
+
 .DAT, .PST {
     display: inline-block;
     padding-top: 100px;
@@ -31,9 +34,9 @@
     margin-left: 50px;
 }
 
-    .btn-row > div {
-        margin: 5px;
-    }
+.btn-row > div {
+    margin: 5px;
+}
 
 .btnT {
     display: inline-block;
@@ -78,11 +81,41 @@
     font-family: 'Palatino Linotype';
 }
 
-#Srvc #SrvcDtl {
-    align-content: center;
+    #Srvc #SrvcDtl {
+        align-content: center;
+        font-weight: bold;
+        font-size: 36px;
+        font-family: 'Palatino Linotype';
+    }
+
+footer {
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FDF8F2;
+    padding: 20px;
+}
+
+.footer-container a {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 36px;
-    font-family: 'Palatino Linotype';
+    font-size: medium;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .social-icons a {
+        margin: 0 5px;
+    }
+
+.copyright {
+    text-align: center;
+    color: black;
+    margin-top: 10px;
 }
 
 *,
@@ -103,7 +136,14 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     display: block;
 }
 
-
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    background-image: url(../photos/Background.png)
+}
 
 .text {
     cursor: pointer;
@@ -11443,7 +11483,6 @@ body {
     font-size: 16px;
     line-height: 1.8;
     font-weight: normal;
-    background-image: url(~/photos/Background.png)
 }
 
 a {

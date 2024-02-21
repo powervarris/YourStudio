@@ -8,7 +8,6 @@
 <head>
 	<link href="~/css/Booking/blist.css" rel="stylesheet" />
 	<link rel="stylesheet" href="~/css/Booking/jquery.css">
-	<link rel="stylesheet" href="~/resources/demos/style.css">
 </head>
 <body>
 	<section class="Book">
@@ -55,6 +54,21 @@
 		</section>
 	</section>
 
+	<section id="Srvc">
+		<div id="VL2"></div>
+		<div id="SrvcDtl">Service Details</div>
+		<div>PLACEHOLDER USER</div>
+		<div id="slctDate2">PLACEHOLDER DATE</div>
+		<div id="slctTime">PLACEHOLDER TIME</div>
+		<div>PLACEHOLDER CONTACT</div>
+		<div>499</div>
+		<hr />
+		<button class="btn btn-primary inline" id="btnG">ACCEPT</button>
+		<button class="btn btn-primary inline" id="btnR">DECLINE</button>
+		<button class="btn btn-primary inline" id="btnBL">EDIT</button>
+		<button class="btn btn-primary inline" id="btnGR">REMOVE</button>
+	</section>
+
 
 	@section scripts {
 		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -89,6 +103,8 @@
 				$(".ftco-section").show();
 				$(".time-container").show();
 				console.log("You clicked btn1");
+				$("[id^='btnT_']").css("background-color", "white"); // turn all buttons with id starting with 'btnT_' to white
+				$("#btnT_1300").css("background-color", "gray"); // turn the button with id 'btnT_1300' to gray
 			});
 
 			$("#btn2").on("click", function () {
@@ -96,6 +112,8 @@
 				$(".ftco-section").show();
 				$(".time-container").show();
 				console.log("You clicked btn2");
+				$("[id^='btnT_']").css("background-color", "white"); // turn all buttons with id starting with 'btnT_' to white
+				$("#btnT_1430").css("background-color", "gray"); // turn the button with id 'btnT_1430' to gray
 			});
 
 		});
@@ -103,4 +121,16 @@
 
 </body>
 </html>
+
+<footer>
+	<div class="footer-container">
+		<hr />
+		<div class="social-icons">
+			<a href="#" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
+			<a href="#" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+			<a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+		</div>
+	</div>
+	<p class="copyright">&copy; 2023 Your Studio</p>
+</footer>
 
