@@ -14,8 +14,8 @@
     bottom: 0;
     width: 5px;
     background-color: #ccc;
-    margin-left: 150px;
-    height: 100%;
+    margin-left: 380px;
+    height: 1000px;
 }
 
 #VL2 {
@@ -32,7 +32,7 @@
 .blist {
     position: relative;
     top: 60px;
-    left: -215px;
+    margin-left: 65px;
     background-color: white;
     border-radius: 5px;
     padding: 0px 20px 0px 20px;
@@ -50,12 +50,11 @@
 .ftco-section {
     display: none;
     position: absolute;
-    top: 200px;
-    left: 700px;
+    margin: 20px 0 0 700px;
 }
 
 .calendar {
-    top: -130px;
+    margin-top: 130px;
 }
 
 .time-container {
@@ -64,9 +63,7 @@
 
     .time-container .time {
         position: relative;
-        top: 300px;
-        left: 375px;
-        margin-left: 100px;
+        margin: 300px 0 400px 750px;
     }
 
 #btn-row {
@@ -118,14 +115,11 @@
 
 #Srvc {
     position: absolute;
-    top: 300px;
-    right: 30px;
-    transform: translate(-50%);
+    margin: 30px 0 0 300px;
     font-family: 'Palatino Linotype';
 }
 
     #Srvc #SrvcDtl {
-        align-content: center;
         font-weight: bold;
         font-size: 36px;
         font-family: 'Palatino Linotype';
@@ -146,32 +140,4 @@
     border: hidden;
 }
 
-footer {
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FDF8F2;
-    padding: 20px;
-}
 
-.footer-container a {
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: medium;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-    .social-icons a {
-        margin: 0 5px;
-    }
-
-.copyright {
-    text-align: center;
-    color: black;
-    margin-top: 10px;
-}
