@@ -9,16 +9,20 @@
       "PackagePath": "staticwebassets\\css\\Booking\\blist.css"
     },
     {
+      "Id": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\css\\Booking\\crtBook.css",
+      "PackagePath": "staticwebassets\\css\\Booking\\crtBook.css"
+    },
+    {
       "Id": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\css\\Booking\\jquery.css",
       "PackagePath": "staticwebassets\\css\\Booking\\jquery.css"
     },
     {
-      "Id": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\css\\Booking\\style.css",
-      "PackagePath": "staticwebassets\\css\\Booking\\style.css"
-    },
-    {
       "Id": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\css\\Inquiry\\Inquiry.css",
       "PackagePath": "staticwebassets\\css\\Inquiry\\Inquiry.css"
+    },
+    {
+      "Id": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\css\\Inquiry\\crtINQ.css",
+      "PackagePath": "staticwebassets\\css\\Inquiry\\crtINQ.css"
     },
     {
       "Id": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\css\\bootstraps\\_media.css",
@@ -51,6 +55,10 @@
     {
       "Id": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
       "Id": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\favicon.ico",

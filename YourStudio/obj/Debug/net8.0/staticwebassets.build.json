@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fbtRb3NvGOTb/ywAm02loalQq9pMJ6EPu2KMbFLpkVY=",
+  "Hash": "ZWYRwo36fS/eDOBgUmRwTyIdE7PvBbfS5gjiz2daChk=",
   "Source": "YourStudio",
   "BasePath": "_content/YourStudio",
   "Mode": "Default",
@@ -74,6 +74,25 @@
       "OriginalItemSpec": "wwwroot\\css\\Booking\\blist.css"
     },
     {
+      "Identity": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\css\\Booking\\crtBook.css",
+      "SourceId": "YourStudio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\",
+      "BasePath": "_content/YourStudio",
+      "RelativePath": "css/Booking/crtBook.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Booking\\crtBook.css"
+    },
+    {
       "Identity": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\css\\Booking\\jquery.css",
       "SourceId": "YourStudio",
       "SourceType": "Discovered",
@@ -91,25 +110,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Booking\\jquery.css"
-    },
-    {
-      "Identity": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\css\\Booking\\style.css",
-      "SourceId": "YourStudio",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\",
-      "BasePath": "_content/YourStudio",
-      "RelativePath": "css/Booking/style.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\Booking\\style.css"
     },
     {
       "Identity": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\css\\bootstraps\\_media.css",
@@ -245,6 +245,25 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstraps\\utilities\\_stretched-link.css"
     },
     {
+      "Identity": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\css\\Inquiry\\crtINQ.css",
+      "SourceId": "YourStudio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\",
+      "BasePath": "_content/YourStudio",
+      "RelativePath": "css/Inquiry/crtINQ.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Inquiry\\crtINQ.css"
+    },
+    {
       "Identity": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\css\\Inquiry\\Inquiry.css",
       "SourceId": "YourStudio",
       "SourceType": "Discovered",
@@ -281,6 +300,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\css\\style.css",
+      "SourceId": "YourStudio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\",
+      "BasePath": "_content/YourStudio",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
       "Identity": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudio\\YourStudio\\wwwroot\\favicon.ico",

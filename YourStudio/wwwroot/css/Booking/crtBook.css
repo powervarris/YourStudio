@@ -5,7 +5,55 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-.body {
+.menu {
+    height: 100%;
+    width: 80px;
+}
+
+.fa-li {
+    position: relative;
+    left: 0;
+}
+
+.menu-icon {
+    display: inline-block;
+    font-size: 24px;
+    margin: 20px 0px 10px 0px;
+    float: left;
+    color: #333;
+}
+
+    .menu-icon:before {
+        content: "\f0c9";
+    }
+
+    .menu-icon:hover:before {
+        content: "\f00d";
+    }
+
+.navbar-nav {
+    float: right;
+}
+
+.logonav {
+    height: 100%;
+    width: 80px;
+    margin-top: -5px;
+}
+
+.logonav2 {
+    height: 100%;
+    width: 200px;
+    margin-left: -30px;
+    margin-top: -15px;
+}
+
+.topnav {
+    margin-top: 100px;
+}
+
+.collapse.navbar-collapse {
+    justify-content: flex-end;
 }
 
 .DAT, .PST {
