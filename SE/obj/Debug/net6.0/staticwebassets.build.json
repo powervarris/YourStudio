@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zmpZuCGcwClohuoXpCrJAuVQNX3OusHKsIYlwiR4OBs=",
+  "Hash": "mcGkdBkXOZTkAfwi0M/HHEaebgW6Zap94hJSfICLSRo=",
   "Source": "SE",
   "BasePath": "_content/SE",
   "Mode": "Default",
@@ -187,12 +187,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\logofull.png"
     },
     {
-      "Identity": "C:\\Users\\Kenshin\\source\\repos\\SE\\SE\\wwwroot\\css\\galleryadmin.css",
+      "Identity": "C:\\Users\\Kenshin\\source\\repos\\SE\\SE\\wwwroot\\css\\homegallery\\galleryadmin.css",
       "SourceId": "SE",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Kenshin\\source\\repos\\SE\\SE\\wwwroot\\",
       "BasePath": "_content/SE",
-      "RelativePath": "css/galleryadmin.css",
+      "RelativePath": "css/homegallery/galleryadmin.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -201,15 +201,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\galleryadmin.css"
+      "OriginalItemSpec": "wwwroot\\css\\homegallery\\galleryadmin.css"
     },
     {
-      "Identity": "C:\\Users\\Kenshin\\source\\repos\\SE\\SE\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Kenshin\\source\\repos\\SE\\SE\\wwwroot\\css\\homegallery\\home.css",
       "SourceId": "SE",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Kenshin\\source\\repos\\SE\\SE\\wwwroot\\",
       "BasePath": "_content/SE",
-      "RelativePath": "css/site.css",
+      "RelativePath": "css/homegallery/home.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -218,7 +218,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\site.css"
+      "OriginalItemSpec": "wwwroot\\css\\homegallery\\home.css"
+    },
+    {
+      "Identity": "C:\\Users\\Kenshin\\source\\repos\\SE\\SE\\wwwroot\\css\\homegallery\\site.css",
+      "SourceId": "SE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kenshin\\source\\repos\\SE\\SE\\wwwroot\\",
+      "BasePath": "_content/SE",
+      "RelativePath": "css/homegallery/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\homegallery\\site.css"
     },
     {
       "Identity": "C:\\Users\\Kenshin\\source\\repos\\SE\\SE\\wwwroot\\favicon.ico",
