@@ -209,7 +209,7 @@ a{
 
 .bg {
     flex: 1;
-    height: 100vh; /* Adjust the height as needed */
+    height: 100vh; 
     background-position: right;
     position: absolute;
     top: 100px;

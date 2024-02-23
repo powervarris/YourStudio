@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Login";
+    ViewData["Title"] = "Reg";
 }
 <!doctype html>
 <html lang="en">
@@ -7,52 +7,32 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
-
-
+    <link href="~/https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
     <link href="~/fonts/style.css" rel="stylesheet" />
-
     <!-- Bootstrap CSS -->
     <link href="~/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Style -->
-    <link href="~/css/register.css" rel="stylesheet" />
-
+    <link href="~/css/first/reg.css" rel="stylesheet" />
     <title>Register</title>
 </head>
 <body>
-    <div class="d-lg-flex half">
-
+    <div class="d-lg-flex half" style="background-color:#FDF8F2;">
         <div class="d-lg-flex half">
             <div class="d-lg-flex half"></div>
 
-            <div class="bg order-1 order-md-2" id="img2">
-
-                <img src="~/reg1.jpg" style="margin-left:1050px; transform:rotate(-10deg)"/>
-            </div>
-            <div class="bg order-1 order-md-2" id="img2">
-
-                <img src="~/greg2.jpg" style="margin-left:1300px; z-index:3" />
-                
-            </div>
-
-
-            <div class="bg order-1 order-md-2" id="img2">
-
-                <img src="~/reg3.jpg" style="margin-left:1550px; transform:rotate(10deg)" />
-                <p class="signing-in-text">YOUR </p>
-                <p class="your-signing-in-text">SIGNING!</p>
-                
-            </div>
-
-            
+        <div class="bg order-1 order-md-2" id="img2">
+            <img src="~/reg1.jpg" style="margin-left:1050px; transform:rotate(-10deg)" />
         </div>
-
-
+        <div class="bg order-1 order-md-2" id="img2">
+            <img src="~/greg2.jpg" style="margin-left:1300px; z-index:3" />
+        </div>
+        <div class="bg order-1 order-md-2" id="img2">
+            <img src="~/reg3.jpg" style="margin-left:1550px; transform:rotate(10deg)" />
+            <p class="signing-in-text">YOUR </p>
+            <p class="your-signing-in-text">SIGNING!</p>
+        </div>
+    </div>
 
         <div class="contents order-2 order-md-1">
-
-
             <div class="container">
                 <div class="row align-items-center justify-content-center" style="background-color:white">
                     <div class="col-md-7">
@@ -86,7 +66,7 @@
                             <input type="submit" value="REGISTER" class="btn btn-block btn-primary" style="font-family:'Palatino Linotype';font-size:30px">
                             <div class="d-flex mb-5 align-items-center text-center">
                                 <p class="mx-auto" style="color: black; margin-top:20px; font-size:20px">
-                                    Already have an account? <a class="link-danger" style="color: blue;" asp-action="Login" asp-controller="Home">Login</a>
+                                    Already have an account? <a class="link-danger" style="color: blue;" asp-action="Index" asp-controller="Home">Login</a>
                                 </p>
                             </div>
 

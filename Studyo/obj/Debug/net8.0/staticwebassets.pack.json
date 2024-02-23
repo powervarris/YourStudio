@@ -5,16 +5,8 @@
       "PackagePath": "staticwebassets\\Studyo.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\Background.png",
-      "PackagePath": "staticwebassets\\Background.png"
-    },
-    {
       "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\bg_1.jpg",
       "PackagePath": "staticwebassets\\bg_1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\css\\Register.css",
-      "PackagePath": "staticwebassets\\css\\Register.css"
     },
     {
       "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\css\\bootstrap.min.css",
@@ -25,12 +17,20 @@
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\css\\owl.carousel.min.css",
-      "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
+      "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\css\\first\\Background.png",
+      "PackagePath": "staticwebassets\\css\\first\\Background.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\css\\style.css",
-      "PackagePath": "staticwebassets\\css\\style.css"
+      "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\css\\first\\login.css",
+      "PackagePath": "staticwebassets\\css\\first\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\css\\first\\reg.css",
+      "PackagePath": "staticwebassets\\css\\first\\reg.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
     },
     {
       "Id": "C:\\Users\\LENOVO-15IMH05\\source\\repos\\Studyo\\Studyo\\wwwroot\\favicon.ico",
