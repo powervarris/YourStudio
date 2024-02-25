@@ -20,17 +20,40 @@ namespace YourStudio.Controllers
         }
         public IActionResult Inquiry()
         {
-            return View();
+            return View(new InquiryModel());
         }
+        public IActionResult Inquirylist(InquiryModel inquiry)
+        {
+            if (ModelState.IsValid)
+            {
+                TempData["SubmittedInquiry"] = inquiry;
+                return RedirectToAction("InquiryDetails");
+            }
+            return View("~/Views/Home/Inquirylist.cshtml", inquiry);
+        }
+
 
         [HttpPost]
         public ActionResult Submit(InquiryModel inquiry)
         {
             if (ModelState.IsValid)
             {
-                return RedirectToAction("Index");
-            }
-            return View("~/Views/Inquiry/Index.cshtml", inquiry);
+				TempData["SubmittedInquiry"] = inquiry;
+
+				return RedirectToAction("InquiryDetails");
+			}
+            return View("~/Views/Home/Inquirylist.cshtml", inquiry);
         }
-    }
+		public ActionResult InquiryDetails()
+		{
+			var submittedInquiry = TempData["SubmittedInquiry"] as InquiryModel;
+
+			if (submittedInquiry != null)
+			{
+				return View(submittedInquiry);
+			}
+
+			return RedirectToAction("Error");
+		}
+	}
 }
