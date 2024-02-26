@@ -12,4 +12,9 @@ public class BookingController : Controller
 	{
 		return View();
 	}
+
+	public IActionResult Booking()
+	{
+		return View();
+	}
 }
