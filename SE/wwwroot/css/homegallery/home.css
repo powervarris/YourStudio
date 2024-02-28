@@ -50,12 +50,13 @@
 
 #slider {
     position: relative;
-    width: 50%;
+    width: 48vw;
     height: 22vw;
     margin: 150px auto;
     font-family: 'Helvetica Neue', sans-serif;
     perspective: 1400px;
     transform-style: preserve-3d;
+    align-content:center;
     
 }
 
@@ -95,13 +96,15 @@ input[type=radio] {
     font-weight: bold;
     border-radius: 3px;
     cursor: pointer;
-    display: flex;
+    
     align-items: center;
     justify-content: center;
     transition: transform 400ms ease;
 }
 
-
+#slide1 img{
+    width:70%;
+}
 
 /* Slider Functionality */
 
@@ -342,11 +345,8 @@ pack1 {
     font-size: 15px;
     line-height: 24px;
     color: #737373;
-    width:135%;
-    padding-right:200px;
-    margin-right:70px;
-    margin-left:-230px;
-    margin-bottom:-50px;
+    width:100%;
+   s
 }
 
     .site-footer hr {
@@ -460,8 +460,8 @@ body, html {
     color:white;
     margin-left:500px;
     margin-bottom:60px;
-    margin-top:-50px;
-    padding-top:200px;
+    margin-top:-60px;
+    padding-top:100px;
 }
 
 .us {
