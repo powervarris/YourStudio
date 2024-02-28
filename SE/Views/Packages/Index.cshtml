@@ -1,0 +1,201 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/homegallery/packages.css" asp-append-version="true" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+</head>
+
+
+<body style="background-image: url(/assets/Background.png);">
+    <header>
+
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggler"
+                            type="button"
+                            data-mdb-toggle="collapse"
+                            data-mdb-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="menu-adjust">
+                            <!-- Left links -->
+                            <ul class="navbar-nav me-3">
+                                <li>
+                                    <div id="mySidenav" class="sidenav">
+                                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                        <a href="#">Username</a>
+                                        <a href="#">Email@email.com</a>
+                                        <a href="#">Mobile</a>
+                                        <a href="#">Logout</a>
+                                    </div>
+                                    <span onclick="openNav()">
+                                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="#">
+                                            <i class="fas fa-bars pe-2 menu"></i>
+                                    </span>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <script>
+                        function openNav() {
+                            document.getElementById("mySidenav").style.width = "250px";
+                        }
+
+                        function closeNav() {
+                            document.getElementById("mySidenav").style.width = "0";
+                        }
+                    </script>
+                    <span>
+                        <a href="#" class="topnav"></a>
+                        <img src="~/assets/logo.png" class="logonav" alt="">
+                        <img src="~/assets/logo2.png" class="logonav2" alt="">
+                    </span>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ml-auto navbar-right">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item active ">
+                            <a class="nav-link" href="#">Packages</a>
+                        </li>
+
+
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Booking
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Create Booking</a>
+                                <a class="dropdown-item" href="#">Booking List</a>
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+    </header>
+
+        <body>
+
+
+
+        <h1 class="text-center">
+            <span class="pckg">PACKAGES</span>
+            
+        </h1>
+
+
+        <div >
+            <hr class="hrline" />
+            
+
+             <img class="img-adj" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfK30-IkkMoJig1SZies66LZpvqfljfNPESw&usqp=CAU" alt="Avatar">
+            <h1 class ="pck-headingtxt"> YOUR STUDENT</h1>
+            
+            <p class="sub-text">1 person only</p>
+            <p class="sub-text">20 mins of shoot</p>
+            <p class="sub-text2">1-2 backdrops</p>
+            <p class="sub-text2" style="margin-top:-11px;">1 printed 4R</p>
+            <p style="padding-left: 670px;  font-family: Calibri;
+    font-size: 20px; margin-top:-39px;">All raw digital copies</p>
+
+            <div class="">
+                <span style="color:darkorchid; padding-left: 990px; margin-top:-90px; padding-bottom:20px;" class=" glyphicon glyphicon-stop squares"></span>
+            </div>
+            
+
+        <hr class="hrline2" />
+
+                 
+
+        </div>
+
+
+        </body>
+
+        <br /><br /><br />
+
+
+    
+    <footer>
+        <div class="footer-container">
+            <hr />
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2023 Your Studio</p>
+    </footer>
+
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.js"
+            asp-fallback-src="~/lib/jquery/dist/jquery.js"
+            asp-fallback-test="window.jQuery"
+            crossorigin="anonymous"
+            integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+    </script>
+
+
+
+    <script src="https://cdjns.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+</body>
+
+
+
+</html>

@@ -51,9 +51,6 @@
     padding-right: 30px;
 }
 
-.form-inline input .form-control{
-    width: 200px;
-}
 
 .navbaradjust {
     margin-left: 900px;
@@ -65,6 +62,7 @@
 .searchbar{
     margin-top:20px;
     margin-left:190px;
+  
 }
 
 
@@ -278,3 +276,4 @@ footer {
     color: black;
     margin-top: 10px;
 }
+

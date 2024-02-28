@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\css\\homegallery\\home.css"
     },
     {
+      "Id": "C:\\Users\\Kenshin\\source\\repos\\SE\\SE\\wwwroot\\css\\homegallery\\packages.css",
+      "PackagePath": "staticwebassets\\css\\homegallery\\packages.css"
+    },
+    {
       "Id": "C:\\Users\\Kenshin\\source\\repos\\SE\\SE\\wwwroot\\css\\homegallery\\site.css",
       "PackagePath": "staticwebassets\\css\\homegallery\\site.css"
     },

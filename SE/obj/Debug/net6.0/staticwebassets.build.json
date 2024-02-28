@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mcGkdBkXOZTkAfwi0M/HHEaebgW6Zap94hJSfICLSRo=",
+  "Hash": "wSm7/19tt8Sz+v4H2HzO41rT7nFvAwJlck5CxrcMz7k=",
   "Source": "SE",
   "BasePath": "_content/SE",
   "Mode": "Default",
@@ -219,6 +219,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\homegallery\\home.css"
+    },
+    {
+      "Identity": "C:\\Users\\Kenshin\\source\\repos\\SE\\SE\\wwwroot\\css\\homegallery\\packages.css",
+      "SourceId": "SE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kenshin\\source\\repos\\SE\\SE\\wwwroot\\",
+      "BasePath": "_content/SE",
+      "RelativePath": "css/homegallery/packages.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\homegallery\\packages.css"
     },
     {
       "Identity": "C:\\Users\\Kenshin\\source\\repos\\SE\\SE\\wwwroot\\css\\homegallery\\site.css",
