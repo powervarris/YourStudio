@@ -263,7 +263,7 @@ div.desc {
     text-align: center;
     margin-left: 11%;
     height: 2px;
-    margin-top:30px;
+    margin-top:-10px;
 }
 .img-adj {
     border-radius: 100px;
@@ -283,10 +283,9 @@ div.desc {
 .sub-text2 {
     font-family: Calibri;
     font-size: 20px;
-    margin-top:-100px;
-    padding-top:17px;
+    margin-top: -76px;
+    margin-bottom: 17px;
     padding-left: 520px;
-    
 }
 .squares {
     font-size: 50px;
