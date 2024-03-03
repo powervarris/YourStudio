@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="~/css/booking/crtbook.css" rel="stylesheet" />
+    <link href="~/css/booking/crtBook.css" rel="stylesheet" />
 </head>
 <body>
 	<div class="DAT inline">
@@ -82,23 +82,56 @@
 		<div>20 mins</div>
 		<div>199</div>
 		<hr />
-		<div class="btnB" data-original-color="Black">BOOK</div>
+		<button class="btnB" data-original-color="Black" onclick="showPaymentPopup()">BOOK</button>
 	</section>
 
+	<div id="paymentModal" class="modal">
+		<div class="modal-payment">
+			<span class="close" onclick="hidePaymentPopup()">&times;</span>
+			<h2>Payment Confirmation</h2>
+			<p class="price">Amount: $199</p>
+			<div id="qrCode" class="qrcode"></div>
+			
+			<label for="proofOfPayment">Upload Proof of Payment:</label>
+			<input type="file" id="proofOfPayment" name="proofOfPayment" accept="image/*">
+			<button id="confirmPaymentButton" onclick="processPayment()" disabled>Confirm Payment</button>
+		</div>
+	</div>
+
 	<link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" />
-
 	@section scripts {
-
 		<script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
 		<script src="~/bootstraps.min.js"></script>
-
 		<script src="~/js/jquery.min.js"></script>
 		<script src="~/js/popper.js"></script>
 		<script src="~/js/main.js"></script>
-
 	}
 
 	<script>
+		function showPaymentPopup() {
+			document.getElementById("paymentModal").style.display = "block";
+		}
+		function hidePaymentPopup() {
+			document.getElementById("paymentModal").style.display = "none";
+		}
+		function handleFileChange() {
+			var fileInput = document.getElementById("proofOfPayment");
+			var confirmButton = document.getElementById("confirmPaymentButton");
+			confirmButton.disabled = fileInput.files.length === 0;
+		}
+		function processPayment() {
+			var fileInput = document.getElementById("proofOfPayment");
+			if (fileInput.files.length > 0) {
+				var selectedFile = fileInput.files[0];
+				alert("Payment processed successfully! Proof of Payment: " + selectedFile.name);
+			} else {
+				alert("Payment processed successfully!");
+			}
+
+			hidePaymentPopup();
+		}
+
+		document.getElementById("proofOfPayment").addEventListener("change", handleFileChange);
 		$(document).ready(function () {
 			var $prevButton = null;
 
