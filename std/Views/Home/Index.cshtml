@@ -1,0 +1,121 @@
+﻿
+<html>
+    <head>
+    <link href="~/css/login/login.css" rel="stylesheet" />
+   
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <span>
+                            <img src="~/css/login/logo.png" class="logonav" alt="logoimage1" style="width:80px;height:auto">
+                            <img src="~/css/login/logo2.png" class="logonav2" alt="logoimage2" style="width:150px;height:auto">
+                            <i class="fas fa-bars menu-icon"></i>
+                        </span>
+                    </div>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                        <ul class="navbar-nav ml-auto navbar-right">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Gallery</a>
+                            </li>
+                            <li class="nav-item active ">
+                                <a class="nav-link" href="#">Packages</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">
+                                    Booking
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" asp-action="Register" asp-controller="Home">
+                                    Sign up
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+<div class="container-fluid ps-md-0">
+    <div class="row g-0">
+        
+        <div class="col-md-8 col-lg-6">
+            <div class="login d-flex align-items-center py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9 col-lg-8 mx-auto">
+                                <div class="greeting-container">
+                                    <h3 id="greeting"><strong></strong></h3>
+                                </div>
+                            <form>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Username</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                    <label for="floatingPassword">Password</label>
+                                </div>
+
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
+                                    <label class="form-check-label" for="rememberPasswordCheck">
+                                        Remember password
+                                    </label>
+                                        <label class="form-check-label" style="margin-left:250px">
+                                            <p class="" style="color:black">No Acccount Yet?
+                                                <a class="link-danger" style="color:blue" asp-action="Register" asp-controller="Home">Sign up</a></p>
+                                        </label>
+                                    </div>  
+                                <div class="d-grid">
+                                    <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" type="submit">Sign in</button>
+                                    <div class="text-center">
+                                        <a class="small" asp-action="Forget" asp-controller="Home">Forgot password?</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
+                <div class="d-lg-flex half">
+                    <div class="d-lg-flex half"></div>
+                    <div class="bg order-1 order-md-2" id="img1">
+                        <img src="~/css/login/img2.jpg" style="margin-left:-80px;transform:rotate(-10deg)" />
+                    </div>
+                    <div class="bg order-1 order-md-2" id="img1">
+                        <img src="~/css/login/img1.jpg" style="margin-left:210px; z-index:3" />
+                    </div>
+                    <div class="bg order-1 order-md-2" id="img1">
+                        <img src="~/css/login/img3.jpg" style="margin-left:500px; transform:rotate(10deg)" />
+                    </div>
+                    <div style="position:relative; left:450px; top:580px">
+                    <h2 class="tag">YOUR<STRONG>STUDIO</STRONG></h2>
+                    </div>
+            </div>
+    </div>
+</div>
+</div>
+    <script>
+        var currentHour = new Date().getHours();
+
+        var greetingElement = document.getElementById("greeting");
+
+        if (currentHour >= 0 && currentHour < 12) {
+            greetingElement.innerHTML = "<h1>GOOD MORNING</h1>";
+        } else if (currentHour >= 12 && currentHour < 18) {
+            greetingElement.innerHTML = "<h1>GOOD AFTERNOON</h1>";
+        } else {
+            greetingElement.innerHTML = "<h1>GOOD EVENING</h1>";
+        }
+    </script>
+</body>
+</html>

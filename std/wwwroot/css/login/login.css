@@ -1,0 +1,108 @@
+﻿.login {
+    min-height: 100vh;
+}
+
+.bg-image {
+    background-image: url('Background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.login-heading {
+    font-weight: 300;
+}
+
+.btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+}
+.btn-primary {
+    color: black;
+    background-color: white;
+    border-color: black;
+    font-family:'Palatino Linotype';
+    font-size:20px
+}
+.form-control {
+    font-family: 'Palatino Linotype';
+    border-top:none;
+    border-right:none;
+    border-left:none
+}
+
+.greeting-container {
+    font-family: Constantia;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    margin-bottom: 20px; 
+    font-size:50%
+}
+h1{
+    font-size:55px
+}
+
+#img1 img {
+    width: 300px;
+    height: 40%;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.d-lg-flex.half {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+}
+.form-floating label {
+    font-family:'Palatino Linotype'
+}
+
+h2.tag {
+    font-size: 24px;
+    color: #333; 
+    font-weight: bold; 
+   
+}
+
+
+h2.tag strong {
+    font-weight: normal; 
+    color: #ff6600; 
+}
+.navbar-nav {
+    float: right;
+}
+
+.logonav {
+    height: 100%;
+    width: 80px;
+    margin-top: -5px;
+}
+#logoimage1{
+    width:80px;
+    height:auto
+}
+
+.logonav2 {
+    height: 100%;
+    width: 200px;
+    margin-left: -30px;
+    margin-top: -15px;
+}
+#logoimage2{
+    width:80px;
+    height:auto
+}
+
+.topnav {
+    margin-top: 100px;
+}
+
+.collapse.navbar-collapse {
+    justify-content: flex-end;
+    background-image: url('background.png');
+}

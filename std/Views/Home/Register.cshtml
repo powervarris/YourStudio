@@ -1,0 +1,130 @@
+﻿
+<html>
+<head>
+
+    <link href="~/css/login/reg.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <span>
+                        <img src="~/css/login/logo.png" class="logonav" alt="logoimage1" style="width:80px;height:auto">
+                        <img src="~/css/login/logo2.png" class="logonav2" alt="logoimage2" style="width:150px;height:auto">
+                        <i class="fas fa-bars menu-icon"></i>
+                    </span>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                    <ul class="navbar-nav ml-auto navbar-right">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item active ">
+                            <a class="nav-link" href="#">Packages</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                Booking
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link"  asp-action="Index" asp-controller="Home">
+                                Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid ps-md-0">
+        <div class="row g-0">
+
+            <div class="col-md-8 col-lg-6">
+                <div class="login d-flex align-items-center py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 col-lg-8 mx-auto">
+                                <div class="greeting-container">
+                                    <h3 id="greeting"><strong></strong></h3>
+                                </div>
+                                <form>
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">Username</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                        <label for="floatingPassword">Password</label>
+                                    </div> <div class="form-floating mb-3">
+                                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                        <label for="floatingPassword">Confirm Password</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                        <label for="floatingPassword">Email Address</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                        <label for="floatingPassword">Phone number</label>
+                                    </div>
+                                    <div class="d-flex mb-5 align-items-center">
+                                        <input class="form-check-input" type="checkbox" style="margin-left:11" value="" id="termsCheck" required>
+                                        <label class="form-check-label" for="termsCheck" style="font-family:Calibri;">
+                                            By signing up, you agree to Your Studio's' <a href="#" style="color: black; font-family:Calibri">Terms and Conditions</a>and <a href="#" style="color:black; font-family:Calibri ">Privacy Policy</a>
+                                        </label>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" type="submit">REGISTER</button>
+                                        <div class="text-center">
+                                            <p class="mx-auto" style="color: black; margin-top:20px; font-size:20px">
+                                                Already have an account? <a class="link-danger" style="color: blue;" asp-action="Index" asp-controller="Home">Login</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
+                <div class="d-lg-flex half col-md-4 col-lg-6">
+                   <div>
+                        <div class="bg order-1 order-md-2" id="img1">
+                            <img src="~/css/login/reg1.jpg" style="margin-left:-80px;transform:rotate(-10deg)" />
+                        </div>
+                        <div class="bg order-1 order-md-2" id="img1">
+                            <img src="~/css/login/greg2.jpg" style="margin-left:210px; z-index:3" />
+                        </div>
+                        <div class="bg order-1 order-md-2" id="img1">
+                            <img src="~/css/login/reg3.jpg" style="margin-left:500px; transform:rotate(10deg)" />
+                        </div>
+                   </div>
+                    <div style="position:relative; left:250px; top:590px">
+                        <p class="signing-in-text">YOUR'RE </p>
+                        <p class="your-signing-in-text">SIGNING!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var currentHour = new Date().getHours();
+
+            var greetingElement = document.getElementById("greeting");
+
+            if (currentHour >= 0 && currentHour < 12) {
+                greetingElement.innerHTML = "<h1>GOOD MORNING</h1>";
+            } else if (currentHour >= 12 && currentHour < 18) {
+                greetingElement.innerHTML = "<h1>GOOD AFTERNOON</h1>";
+            } else {
+                greetingElement.innerHTML = "<h1>GOOD EVENING</h1>";
+            }
+        </script>
+</body>
+</html>
